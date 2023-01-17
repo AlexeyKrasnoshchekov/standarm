@@ -7,6 +7,38 @@
   min-height: 100vh;
 }
 
+.bodyWrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-rows: 1 / -1; */
+  grid-template-areas: 
+    "bodyLeft bodyRight";
+    padding-top: 20px;
+}
+.bodyLeft {
+  grid-area: bodyLeft;
+  outline: 1px solid yellow;
+  /* grid-row: 1 / -1; */
+}
+.bodyRight {
+  grid-area: bodyRight;
+  outline: 1px solid red;
+  min-height: calc(100vh - 250px);
+}
+
+.lowerMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-right: 1%;
+  padding-left: 3%;
+}
+
+.lowerMenuIcon  {
+  text-decoration: none !important;
+  letter-spacing: -0.08em !important;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

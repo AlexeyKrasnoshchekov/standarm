@@ -1,0 +1,111 @@
+.menuItem {
+    display: flex;
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    
+    
+    border-radius: 50%;
+    width: 97px;
+    height: 97px;
+    line-height: 16px;
+
+    position: relative;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    margin-top: -10px;
+}
+
+/* .menuItemInner {
+    max-width: 100px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 9px;
+} */
+
+.menuItem:before {
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    /* border: 5px solid lightblue; */
+    border-radius: 50%;
+    box-shadow: 5px 5px rgb(188, 187, 187);
+    /* background: linear-gradient(to right, red, orange); */
+    /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+  }
+.menuItem:after {
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    /* border: 5px solid lightblue; */
+    border-radius: 50%;
+    box-shadow: -5px -5px rgb(188, 187, 187);
+    /* background: linear-gradient(to right, red, orange); */
+    /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+  }
+
+.primary {
+    color: var(--black);
+    /* background-color: var(--white); */
+    background-color: var(--primary);
+    outline: 3px solid #5396cc;
+    border: 6px solid white;
+}
+.primary:hover {
+    /* background-color: var(--primary-hover); */
+    border: 6px solid #5396cc;
+    text-decoration: none;
+}
+.primary:hover::before {
+    display: none;
+}
+.primary:hover::after {
+    display: none;
+}
+.ghost {
+    color: var(--black);
+    background-color: none;
+    border: 1px solid var(--gray-light);
+}
+.ghost:hover {
+    color: var(--white);
+    background-color: var(--primary);
+    border: 1px solid var(--gray-light);
+}
+
+.arrow {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    margin-left: 10px;
+}
+.down {
+    transform: rotate(90deg);
+    /* transition: all 0.2s; */
+}

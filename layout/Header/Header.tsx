@@ -1,0 +1,53 @@
+import React from 'react';
+import styles from './Header.module.css';
+import cn from 'classnames';
+import { HeaderProps } from './Header.props';
+import Image from 'next/image';
+import logo from '../../images/t1.png';
+import MenuItem from '@/components/MenuItem/MenuItem';
+
+const Header = ({ className, ...props }: HeaderProps) => {
+  return (
+    <>
+      <div className={cn(className, styles.headerWrapper)} {...props}>
+        <div className={styles.headerLeft}>
+          <Image src={logo} alt="лого стандарма" width={313} height={61} />
+        </div>
+        <div className={styles.headerCenter}>Трубопроводная арматура</div>
+        <div className={styles.headerRight}>
+          <p>Средства управления и автоматизации</p>
+        </div>
+        <div className={styles.headerAddress}>
+          {/* <a href="tel:+74957750035">+7 (495) 775-00-35</a>
+          <a href="mailto:info@standarm.ru">info@standarm.ru</a> */}
+          <p>тел.: 8 (495) 775-00-35</p>
+          <p>e-mail: info@standarm.ru</p>
+          <p>г. Москва, ул. Летниковская</p>
+          <p>дом.5, пом.l, ком.43</p>
+        </div>
+        <div className={styles.headerMenu}>
+          <MenuItem className={styles.headerMenuItem} appearance="primary">
+            Продукция
+          </MenuItem>
+          <MenuItem className={styles.headerMenuItem} appearance="primary">
+            Отрасли
+          </MenuItem>
+          <MenuItem className={styles.headerMenuItem} appearance="primary">
+            Сервис
+          </MenuItem>
+          <MenuItem className={styles.headerMenuItem} appearance="primary">
+            Опросный лист
+          </MenuItem>
+          <MenuItem className={styles.headerMenuItem} appearance="primary">
+            Контакты
+          </MenuItem>
+          <MenuItem className={styles.headerMenuItem} appearance="primary">
+            Откзывы
+          </MenuItem>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Header;

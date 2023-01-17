@@ -1,0 +1,32 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Post 1",
+            "content": "This is the full content of post 1",
+            "date": "2018-12-10T13:49:51.141Z",
+            "images":["http://localhost:3000/images/prom_1"]
+        },
+        {
+            "id": 2,
+            "title": "Post 2",
+            "content": "This is the full content of post 2",
+            "date": "2019-12-10T13:49:51.141Z",
+            "images":["http://localhost:3000/images/prom_1"]
+        },
+        {
+            "id": 3,
+            "title": "Post 3",
+            "content": "This is the full content of post 3",
+            "date": "2020-12-10T13:49:51.141Z",
+            "images":["http://localhost:3000/images/prom_1"]
+        },
+        {
+            "id": 4,
+            "title": "Post 4",
+            "content": "This is the full content of post 4",
+            "date": "2021-12-10T13:49:51.141Z",
+            "images":["http://localhost:3000/images/prom_1"]
+        }
+    ]
+}

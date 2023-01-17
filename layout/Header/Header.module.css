@@ -1,0 +1,113 @@
+.headerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    /* gap: 10px 10px; */
+    /* padding: 10px 15px; */
+    grid-template-areas: 
+    "headerLeft headerCenter headerRight"
+    "headerAddress headerMenu headerMenu";
+    
+    
+
+    background-color: lightblue;
+    color: var(--white);
+
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.headerAddress {
+    min-height: 75px;
+}
+
+.headerLeft {
+    grid-area: headerLeft;
+    display: flex;
+    min-height: 105px;
+    align-items: center;
+    justify-content: center;
+    /* border: 0px solid red; */
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: var(--black);
+}
+.headerCenter {
+    grid-area: headerCenter;
+    display: flex;
+    color: #99a1af;
+    text-transform: uppercase;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+.headerRight {
+    grid-area: headerRight;
+    display: flex;
+    align-items: center;
+    
+}
+.headerRight p {
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--gray);
+}
+
+.headerAddress {
+    grid-area: headerAddress;
+    background: linear-gradient(#0c5f93, #186fb1);
+    position: relative;
+    overflow: hidden;
+}
+.headerAddress:before {
+    content: " ";
+    position: absolute;
+    
+    width: 60%;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(#e4e6ea, #8d97a6);
+    clip-path: polygon(0 0, 100% 1%, 50% 100%, 0% 100%);
+}
+.headerAddress:after {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 160px;
+    z-index: 3;
+    top: -40px;
+    left: 190px;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+    transform: rotate(59deg);
+    
+}
+.headerAddress p {
+    line-height: 0.1em;
+    text-align: right;
+}
+.headerMenu {
+    grid-area: headerMenu;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    max-height: 75px;
+    
+    background: linear-gradient(#0c5f93, #186fb1);
+
+}
+.headerMenuItem {
+    margin-top: -25px;
+    color: var(--white) !important;
+}
+
+@media (max-width: 765px) {
+    .headerWrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
