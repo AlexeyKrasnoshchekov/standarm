@@ -34,7 +34,7 @@ function Home({ posts }: any): JSX.Element {
     <div className={styles.bodyWrapper}>
       <div className={styles.bodyLeft}>
         <div className={styles.news}>
-          <Link href={'/news'}>Новости компании</Link>
+          <Link href={'/news'}>Новости компании1</Link>
           <Carousel
             useKeyboardArrows={true}
             showArrows={false}
