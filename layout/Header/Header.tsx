@@ -5,13 +5,16 @@ import { HeaderProps } from './Header.props';
 import Image from 'next/image';
 import logo from '../../images/t1.png';
 import MenuItem from '@/components/MenuItem/MenuItem';
+import Link from 'next/link';
 
 const Header = ({ className, ...props }: HeaderProps) => {
   return (
     <>
       <div className={cn(className, styles.headerWrapper)} {...props}>
         <div className={styles.headerLeft}>
-          <Image src={logo} alt="лого стандарма" width={313} height={61} />
+          <Link href={'/'}>
+            <Image src={logo} alt="лого стандарма" width={313} height={61} />
+          </Link>
         </div>
         <div className={styles.headerCenter}>Трубопроводная арматура</div>
         <div className={styles.headerRight}>

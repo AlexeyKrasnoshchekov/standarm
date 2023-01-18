@@ -7,5 +7,7 @@ export interface Post {
     content: string,
     date: string,
     images: Array<string>,
+    imageSlider: string,
+    dateString: string,
     id: number
 }

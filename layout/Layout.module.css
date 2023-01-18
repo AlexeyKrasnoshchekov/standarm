@@ -9,6 +9,8 @@
     ". body body ."
     "footer footer footer footer";
 
+    overflow: hidden;
+
 }
 
 .header{

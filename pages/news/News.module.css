@@ -1,0 +1,9 @@
+.wrapper {
+    display: grid;
+    align-items: center;
+    margin-right: auto;
+}
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+}

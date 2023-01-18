@@ -2,31 +2,121 @@
     "posts": [
         {
             "id": 1,
-            "title": "Post 1",
-            "content": "This is the full content of post 1",
-            "date": "2018-12-10T13:49:51.141Z",
-            "images":["http://localhost:3000/images/prom_1"]
+            "dateString":"26 мая 2016",
+            "title": "Открытие нового производственно-складского комплекса",
+            "content": "",
+            "date": "2016-05-26T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/1/n1.jpg", "http://localhost:3000/images/news/1/sklad1.jpg", "http://localhost:3000/images/news/1/sklad2.jpg", "http://localhost:3000/images/news/1/sklad3.jpg","http://localhost:3000/images/news/1/sklad4.jpg"],
+            "imageSlider":"http://localhost:3000/images/news/1/sklad1.jpg"
         },
         {
             "id": 2,
-            "title": "Post 2",
-            "content": "This is the full content of post 2",
-            "date": "2019-12-10T13:49:51.141Z",
-            "images":["http://localhost:3000/images/prom_1"]
+            "dateString":"16 августа 2016",
+            "title": "В новый цех с новым оборудованием",
+            "content": "",
+            "date": "2016-08-16T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/2/n1.jpg"],
+            "imageSlider":"http://localhost:3000/images/news/1/sklad1.jpg"
+            
         },
         {
             "id": 3,
-            "title": "Post 3",
-            "content": "This is the full content of post 3",
-            "date": "2020-12-10T13:49:51.141Z",
-            "images":["http://localhost:3000/images/prom_1"]
+            "dateString":"10 марта 2017",
+            "title": "Гарантия качества от компании Стандарм",
+            "content": "",
+            "date": "2017-03-10T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/3/n.jpg"],
+            "imageSlider":"http://localhost:3000/images/news/1/sklad1.jpg"
         },
         {
             "id": 4,
-            "title": "Post 4",
-            "content": "This is the full content of post 4",
-            "date": "2021-12-10T13:49:51.141Z",
-            "images":["http://localhost:3000/images/prom_1"]
+            "dateString":"14 августа 2017",
+            "title": "Модернизация рабочих мест",
+            "content": "",
+            "date": "2017-08-14T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/4/n.jpg"],
+            "imageSlider":""
+        },
+        {
+            "id": 5,
+            "dateString":"7 октября 2019",
+            "title": "Мы рады представить Вам новый раздел нашего сайта",
+            "content": "",
+            "date": "2019-10-07T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/5/ob_2.jpg"],
+            "imageSlider":""
+        },
+        {
+            "id": 6,
+            "dateString":"8 июня 2020",
+            "title": "Отгрузка партии ручных трехэксцентриковых дисковых затворов Тип СТМ Д 42 и ручных шаровых кранов с плавающим шаром Тип СТМ 34",
+            "content": "",
+            "date": "2020-06-08T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/6/n.jpg"],
+            "imageSlider":""
+        },
+        {
+            "id": 7,
+            "dateString":"22 июля 2020",
+            "title": "Отгрузка партии дисковых затворов ДУ 700 РУ 25",
+            "content": "",
+            "date": "2020-07-22T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/7/n.jpg"],
+            "imageSlider":""
+        },
+        {
+            "id": 8,
+            "dateString":"2 октября 2020",
+            "title": "Наличие продукции на нашем складе",
+            "content": "",
+            "date": "2020-10-02T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/8/n.jpg"],
+            "imageSlider":""
+        },
+        {
+            "id": 9,
+            "dateString":"7 декабря 2020",
+            "title": "В Новый год с новыми возможностями",
+            "content": "",
+            "date": "2020-12-07T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/9/n.jpg"],
+            "imageSlider":""
+        },
+        {
+            "id": 10,
+            "dateString":"1 февраля 2021",
+            "title": "Дисковый затвор DN 900 PN 16 для ПАО «СИБУР»",
+            "content": "",
+            "date": "2021-02-01T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/10/n.jpg"],
+            "imageSlider":""
+        },
+        {
+            "id": 11,
+            "dateString":"15 июля 2021",
+            "title": "Поставка пневмоприводных шаровых кранов в адрес «ЛЛК-Интернешнл»",
+            "content": "",
+            "date": "2021-07-15T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/11/n.jpg"],
+            "imageSlider":"http://localhost:3000/images/news/11/h.jpg"
+        },
+        {
+            "id": 12,
+            "dateString":"2 сентября 2021",
+            "title": "Заказы из наличия на складе",
+            "content": "",
+            "date": "2021-09-02T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/12/n.jpg"],
+            "imageSlider":"http://localhost:3000/images/news/12/h.jpg"
+        },
+        {
+            "id": 13,
+            "dateString":"2 декабря 2022",
+            "title": "Испытания для гарантии качества",
+            "content": "",
+            "date": "2022-12-02T13:49:51.141Z",
+            "images":["http://localhost:3000/images/news/13/n.jpg"],
+            "imageSlider":"http://localhost:3000/images/news/13/h.jpg"
         }
     ]
 }

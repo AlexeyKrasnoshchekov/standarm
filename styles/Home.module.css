@@ -18,7 +18,14 @@
 .bodyLeft {
   grid-area: bodyLeft;
   outline: 1px solid yellow;
-  /* grid-row: 1 / -1; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "news newsRight";
+  
+}
+.news{
+  grid-area: news;
 }
 .bodyRight {
   grid-area: bodyRight;
@@ -64,6 +71,19 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+}
+
+.newsHeader {
+  display: block;
+  color: var(--white);
+  background-color: #1267A2;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.newsHeader:hover {
+  color: var(--gray-light);
+  background-color: #186fb1;
 }
 
 .code {

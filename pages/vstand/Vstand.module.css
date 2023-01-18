@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.titleWrapper {
+
+    display: block;
+    width: 100vw;
+    background-color: #1267A2;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.descWrapper, .menuWrapper {
+    display: flex;
+}
+
+.descWrapper {
+    margin-bottom: 10vh;
+}
+.menuWrapper {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    padding: 0 10%;
+}
+.gradient {
+    display: block;
+    min-height: 20vh;
+    width: 100vw;
+    
+    margin-top: auto;
+    background: linear-gradient( transparent, lightgray);
+}

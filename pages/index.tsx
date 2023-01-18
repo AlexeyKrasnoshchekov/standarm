@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Button from '../components/Button/Button';
 import Htag from '../components/Htag/Htag';
@@ -12,6 +12,8 @@ import MenuItem from '@/components/MenuItem/MenuItem';
 import Carousel from 'react-responsive-carousel/lib/js/components/Carousel/index';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
+import anime from 'animejs';
+
 import {
   AnimationHandler,
   AnimationHandlerResponse,
@@ -24,24 +26,62 @@ const imagesCarousel = [
   '/images/prom_3.jpg',
   '/images/prom_4.jpg',
 ];
-const imagesSlider = ['/images/news/1/h.jpg', '/images/news/1/sklad1.jpg'];
+
+const imagesSlider = [
+  '/images/news/1/h.jpg',
+  '/images/news/1/sklad1.jpg',
+  '/images/news/1/sklad2.jpg',
+];
 
 function Home({ posts }: any): JSX.Element {
-  // const [rating, setRating] = useState<number>(4);
-  console.log('444', posts);
+  console.log('first', posts);
+  const titles = posts.map((post: Post) => post.title);
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index === 3) {
+      setIndex(0);
+    }
+    const interval = setInterval(() => {
+      setIndex((index) => index + 1);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [index]);
+
+  useEffect(() => {
+    anime
+      .timeline()
+      .add({
+        targets: '#title',
+        opacity: [0, 1],
+        duration: 1000,
+        easing: 'easeInOutSine',
+      })
+      .add({
+        targets: '#title',
+        delay: 3000,
+        duration: 1000,
+        opacity: [1, 0],
+        easing: 'easeInOutSine',
+      });
+  }, [index]);
 
   return (
     <div className={styles.bodyWrapper}>
       <div className={styles.bodyLeft}>
         <div className={styles.news}>
-          <Link href={'/news'}>Новости компании1</Link>
+          <Link className={styles.newsHeader} href={'/news'}>
+            Новости компании
+          </Link>
           <Carousel
             useKeyboardArrows={true}
             showArrows={false}
             showStatus={false}
             autoPlay={true}
             infiniteLoop={true}
-            interval={5000}
+            interval={5100}
             showThumbs={false}
             swipeable={false}
           >
@@ -52,8 +92,9 @@ function Home({ posts }: any): JSX.Element {
               </div>
             ))}
           </Carousel>
-          <h4></h4>
+          <h1 id="title">{titles[index]}</h1>
         </div>
+        <div></div>
       </div>
       <div className={styles.bodyRight}>
         <Carousel
