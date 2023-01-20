@@ -4,6 +4,7 @@ import { withLayout } from '@/layout/Layout';
 import vstand from '../../images/vstand.gif';
 import Image from 'next/image';
 import MenuItem from '@/components/MenuItem/MenuItem';
+import Link from 'next/link';
 
 function Vstand(): JSX.Element {
   return (
@@ -30,42 +31,52 @@ function Vstand(): JSX.Element {
         </h3>
       </div>
       <div className={styles.menuWrapper}>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="klin"
-        >
-          Задвижки клиновые
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="shiber"
-        >
-          Задвижки шиберные
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="disk"
-        >
-          Затворы дисковые
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="kran"
-        >
-          <span>Краны</span>
-          <span>шаровые</span>
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="arma"
-        >
-          Автоматизация арматуры
-        </MenuItem>
+        <Link href={'/prod'}>
+          <MenuItem
+            className={styles.menuItem}
+            appearance="primary"
+            icon="klin"
+          >
+            Задвижки клиновые
+          </MenuItem>
+        </Link>
+        <Link href={'/prod'}>
+          <MenuItem
+            className={styles.menuItem}
+            appearance="primary"
+            icon="shiber"
+          >
+            Задвижки шиберные
+          </MenuItem>
+        </Link>
+        <Link href={'/prod'}>
+          <MenuItem
+            className={styles.menuItem}
+            appearance="primary"
+            icon="disk"
+          >
+            Затворы дисковые
+          </MenuItem>
+        </Link>
+        <Link href={'/prod'}>
+          <MenuItem
+            className={styles.menuItem}
+            appearance="primary"
+            icon="kran"
+          >
+            <span>Краны</span>
+            <span>шаровые</span>
+          </MenuItem>
+        </Link>
+        <Link href={'/prod'}>
+          <MenuItem
+            className={styles.menuItem}
+            appearance="primary"
+            icon="arma"
+          >
+            Автоматизация арматуры
+          </MenuItem>
+        </Link>
       </div>
       <div className={styles.gradient}></div>
     </div>

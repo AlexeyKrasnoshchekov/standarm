@@ -1,42 +1,49 @@
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-}
+} */
 
 .bodyWrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  /* grid-template-columns: 1fr 2fr; */
   /* grid-template-rows: 1 / -1; */
-  grid-template-areas: 
-    "bodyLeft bodyRight";
+  /* grid-template-areas:  */
+    /* "bodyLeft bodyRight"; */
     padding-top: 20px;
 }
 .bodyLeft {
-  grid-area: bodyLeft;
+  /* grid-area: bodyLeft; */
   outline: 1px solid yellow;
-  display: grid;
+  max-width: 31.7%;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-    "news newsRight";
+    "news newsRight"; */
+
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    border: 0 solid var(--black);
+    border-right-width: 2px;
   
 }
 .news{
-  grid-area: news;
+  max-width: 50%;
+  
 }
 .bodyRight {
-  grid-area: bodyRight;
-  outline: 1px solid red;
   min-height: calc(100vh - 250px);
+  width: 68.3%;
 }
 
 .lowerMenu {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
   padding-right: 1%;
   padding-left: 3%;
 }
@@ -44,6 +51,7 @@
 .lowerMenuIcon  {
   text-decoration: none !important;
   letter-spacing: -0.08em !important;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .description {
@@ -76,12 +84,31 @@
 .newsHeader {
   display: block;
   color: var(--white);
-  background-color: #1267A2;
+  background-color: var(--main);
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
 }
 .newsHeader:hover {
+  color: var(--gray-light);
+  background-color: #186fb1;
+}
+.newsTitle {
+  display: flex;
+  height: 51px;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--gray);
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  padding: 7px 7px;
+
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.newsTitle:hover {
   color: var(--gray-light);
   background-color: #186fb1;
 }

@@ -1,0 +1,44 @@
+.lowerMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding-right: 1%;
+    padding-left: 3%;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 2rem 0;
+    gap: 5rem 5rem;
+  }
+  .heading {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
+  .heading:hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main);
+    
+  }
+  .text {
+    width: 50%;
+    font-size: 1.3rem !important;
+  }
+  .textWrapper {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  .lowerMenuIcon {
+    width: 120px !important;
+    height: 120px !important;
+    font-size: 1.1rem !important;
+    box-shadow: 5px 5px 5px gray;
+  }

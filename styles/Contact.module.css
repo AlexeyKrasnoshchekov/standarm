@@ -2,7 +2,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+}
+.addressWrapper {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin: 2rem 0;
+}
+.mapWrapper {
+    margin-bottom: 5rem;
+}
+.email {
+    color:var(--main);
+    text-decoration: underline;
+}
+.email:hover {
+    color:#467fa8;
+    text-decoration: none;
+}
+.title {
+    font-size: 1.7rem;
+    margin: 3rem 0;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.cardWrapper {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.link {
+    margin-left: 2rem;
+}
+.link:hover {
+    color: var(--main);
 }
 .titleWrapper {
 
@@ -34,9 +69,3 @@
     margin-top: auto;
     background: linear-gradient( transparent, lightgray);
 }
-.menuItem {
-    width: 120px !important;
-    height: 120px !important;
-    font-size: 1.1rem !important;
-    box-shadow: 5px 5px 5px gray;
-  }

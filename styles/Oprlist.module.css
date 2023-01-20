@@ -4,6 +4,25 @@
     align-items: center;
     
 }
+.title {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.cardWrapper {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.link {
+    margin-left: 2rem;
+}
+.link:hover {
+    color: var(--main);
+}
 .titleWrapper {
 
     display: block;
@@ -34,9 +53,3 @@
     margin-top: auto;
     background: linear-gradient( transparent, lightgray);
 }
-.menuItem {
-    width: 120px !important;
-    height: 120px !important;
-    font-size: 1.1rem !important;
-    box-shadow: 5px 5px 5px gray;
-  }

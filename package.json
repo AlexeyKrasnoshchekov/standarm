@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.2",
+    "@pbe/react-yandex-maps": "^1.2.2",
     "@types/animejs": "^3.1.6",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",

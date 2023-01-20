@@ -27,11 +27,11 @@ const imagesCarousel = [
   '/images/prom_4.jpg',
 ];
 
-const imagesSlider = [
-  '/images/news/1/h.jpg',
-  '/images/news/1/sklad1.jpg',
-  '/images/news/1/sklad2.jpg',
-];
+// const imagesSlider = [
+//   '/images/news/1/h.jpg',
+//   '/images/news/1/sklad1.jpg',
+//   '/images/news/1/sklad2.jpg',
+// ];
 
 function Home({ posts }: any): JSX.Element {
   console.log('first', posts);
@@ -50,23 +50,23 @@ function Home({ posts }: any): JSX.Element {
     return () => clearInterval(interval);
   }, [index]);
 
-  useEffect(() => {
-    anime
-      .timeline()
-      .add({
-        targets: '#title',
-        opacity: [0, 1],
-        duration: 1000,
-        easing: 'easeInOutSine',
-      })
-      .add({
-        targets: '#title',
-        delay: 3000,
-        duration: 1000,
-        opacity: [1, 0],
-        easing: 'easeInOutSine',
-      });
-  }, [index]);
+  // useEffect(() => {
+  //   anime
+  //     .timeline()
+  //     .add({
+  //       targets: '#title',
+  //       opacity: [0, 1],
+  //       duration: 1000,
+  //       easing: 'easeInOutSine',
+  //     })
+  //     .add({
+  //       targets: '#title',
+  //       delay: 3000,
+  //       duration: 1000,
+  //       opacity: [1, 0],
+  //       easing: 'easeInOutSine',
+  //     });
+  // }, [index]);
 
   return (
     <div className={styles.bodyWrapper}>
@@ -75,26 +75,43 @@ function Home({ posts }: any): JSX.Element {
           <Link className={styles.newsHeader} href={'/news'}>
             Новости компании
           </Link>
+
           <Carousel
             useKeyboardArrows={true}
             showArrows={false}
             showStatus={false}
             autoPlay={true}
             infiniteLoop={true}
-            interval={5100}
+            interval={5050}
             showThumbs={false}
             swipeable={false}
+            showIndicators={false}
+            animationHandler="slide"
           >
-            {imagesSlider.map((URL, index) => (
-              <div className="slide" key={index}>
-                {/* <img alt="sample_file" src={URL}  /> */}
-                <Image src={URL} alt="фото" width={176} height={235} />
-              </div>
-            ))}
+            {posts &&
+              posts.map((post: Post) => (
+                <>
+                  <div className="slide" key={post.id}>
+                    <Image
+                      src={post.images[0]}
+                      alt="фото"
+                      width={176}
+                      height={235}
+                    />
+                  </div>
+                  <h3 id="title">
+                    <Link
+                      href={`/news/${post.id}`}
+                      className={styles.newsTitle}
+                    >
+                      {post.titleShort ? post.titleShort : post.title}
+                    </Link>
+                  </h3>
+                </>
+              ))}
           </Carousel>
-          <h1 id="title">{titles[index]}</h1>
         </div>
-        <div></div>
+        <div className={styles.newsRight}></div>
       </div>
       <div className={styles.bodyRight}>
         <Carousel

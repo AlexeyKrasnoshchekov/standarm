@@ -29,24 +29,36 @@ const Header = ({ className, ...props }: HeaderProps) => {
           <p>дом.5, пом.l, ком.43</p>
         </div>
         <div className={styles.headerMenu}>
-          <MenuItem className={styles.headerMenuItem} appearance="primary">
-            Продукция
-          </MenuItem>
-          <MenuItem className={styles.headerMenuItem} appearance="primary">
-            Отрасли
-          </MenuItem>
-          <MenuItem className={styles.headerMenuItem} appearance="primary">
-            Сервис
-          </MenuItem>
-          <MenuItem className={styles.headerMenuItem} appearance="primary">
-            Опросный лист
-          </MenuItem>
-          <MenuItem className={styles.headerMenuItem} appearance="primary">
-            Контакты
-          </MenuItem>
-          <MenuItem className={styles.headerMenuItem} appearance="primary">
-            Откзывы
-          </MenuItem>
+          <Link href={'/prod'}>
+            <MenuItem className={styles.headerMenuItem} appearance="primary">
+              Продукция
+            </MenuItem>
+          </Link>
+          <Link href={'/otr'}>
+            <MenuItem className={styles.headerMenuItem} appearance="primary">
+              Отрасли
+            </MenuItem>
+          </Link>
+          <Link href={'/service'}>
+            <MenuItem className={styles.headerMenuItem} appearance="primary">
+              Сервис
+            </MenuItem>
+          </Link>
+          <Link href={'/oprlist'}>
+            <MenuItem className={styles.headerMenuItem} appearance="primary">
+              Опросный лист
+            </MenuItem>
+          </Link>
+          <Link href={'/contact'}>
+            <MenuItem className={styles.headerMenuItem} appearance="primary">
+              Контакты
+            </MenuItem>
+          </Link>
+          <Link href={'/response'}>
+            <MenuItem className={styles.headerMenuItem} appearance="primary">
+              Откзывы
+            </MenuItem>
+          </Link>
         </div>
       </div>
     </>
