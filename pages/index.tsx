@@ -1,12 +1,7 @@
 import { GetStaticProps } from 'next';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
-import Button from '../components/Button/Button';
-import Htag from '../components/Htag/Htag';
-import P from '../components/P/P';
-import Tag from '../components/Tag/Tag';
 import { withLayout } from '../layout/Layout';
-import { UserItem } from '../interfaces/menu.interface';
 import MenuItem from '@/components/MenuItem/MenuItem';
 import Carousel from 'react-responsive-carousel/lib/js/components/Carousel/index';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
