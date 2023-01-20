@@ -46,7 +46,7 @@ setTimeout(function () {
 }, 10000);
 
 function animateNews() {
-  console.log('F:animateNews');
+  // console.log('F:animateNews');
   news_rotation_index++;
   if (news_rotation_index == 3) news_rotation_index = 0;
   document.getElementById('news_image_href').href =

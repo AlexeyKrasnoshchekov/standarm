@@ -8,7 +8,7 @@ function News({ posts }: any): JSX.Element {
   return (
     <div>
       {posts.map((post: Post) => {
-        console.log('777', post.images[0]);
+        // console.log('777', post.images[0]);
         return (
           <div
             key={post.id}

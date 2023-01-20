@@ -3,7 +3,7 @@ import styles from '../../styles/Post.module.css';
 // import Container from '../../components/Container';
 
 function Post(post: any) {
-  console.log('999', post.post.id);
+  //   console.log('999', post.post.id);
   return <h3>{post.post.title}</h3>;
 }
 
@@ -17,7 +17,7 @@ import { withLayout } from '@/layout/Layout';
 export async function getStaticProps(context: any) {
   const params = context.params;
   const id = params.id;
-  console.log('333', id);
+  //   console.log('333', id);
 
   if (!id) {
     return {

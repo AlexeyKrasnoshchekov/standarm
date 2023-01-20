@@ -11,7 +11,7 @@ function Service(): JSX.Element {
       <div className={styles.cardWrapper}>
         <div className={styles.card}>
           <Image
-            src={'http://localhost:3000/images/service/serv_2.jpg'}
+            src={'/images/service/serv_2.jpg'}
             alt="лого стандарма"
             width={310}
             height={390}
@@ -41,7 +41,7 @@ function Service(): JSX.Element {
         </div>
         <div className={styles.card} style={{ justifySelf: 'center' }}>
           <Image
-            src={'http://localhost:3000/images/service/serv_3.jpg'}
+            src={'/images/service/serv_3.jpg'}
             alt="лого стандарма"
             width={310}
             height={390}
@@ -69,7 +69,7 @@ function Service(): JSX.Element {
         </div>
         <div className={styles.card} style={{ justifySelf: 'end' }}>
           <Image
-            src={'http://localhost:3000/images/service/serv_4.jpg'}
+            src={'/images/service/serv_4.jpg'}
             alt="лого стандарма"
             width={310}
             height={390}

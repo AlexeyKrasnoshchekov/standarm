@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import { withLayout } from '../layout/Layout';
+
 import MenuItem from '@/components/MenuItem/MenuItem';
 import Carousel from 'react-responsive-carousel/lib/js/components/Carousel/index';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';

@@ -79,7 +79,7 @@ function Prod(): JSX.Element {
         <div className={styles.cardWrapper}>
           <div className={styles.card}>
             <Image
-              src={'http://localhost:3000/images/prod/prodi_1.jpg'}
+              src={'/images/prod/prodi_1.jpg'}
               alt="лого стандарма"
               width={200}
               height={320}
@@ -108,7 +108,7 @@ function Prod(): JSX.Element {
           </div>
           <div className={styles.card} style={{ justifySelf: 'center' }}>
             <Image
-              src={'http://localhost:3000/images/prod/prodi_2.jpg'}
+              src={'/images/prod/prodi_2.jpg'}
               alt="лого стандарма"
               width={200}
               height={320}
@@ -137,7 +137,7 @@ function Prod(): JSX.Element {
           </div>
           <div className={styles.card} style={{ justifySelf: 'end' }}>
             <Image
-              src={'http://localhost:3000/images/prod/prodi_3.jpg'}
+              src={'/images/prod/prodi_3.jpg'}
               alt="лого стандарма"
               width={200}
               height={320}
@@ -165,7 +165,7 @@ function Prod(): JSX.Element {
           </div>
           <div className={styles.card}>
             <Image
-              src={'http://localhost:3000/images/prod/prodi_4.jpg'}
+              src={'/images/prod/prodi_4.jpg'}
               alt="лого стандарма"
               width={200}
               height={320}
@@ -196,7 +196,7 @@ function Prod(): JSX.Element {
           </div>
           <div className={styles.card} style={{ justifySelf: 'center' }}>
             <Image
-              src={'http://localhost:3000/images/prod/prodi_5.jpg'}
+              src={'/images/prod/prodi_5.jpg'}
               alt="лого стандарма"
               width={200}
               height={320}
@@ -228,7 +228,7 @@ function Prod(): JSX.Element {
           </div>
           <div className={styles.card} style={{ justifySelf: 'end' }}>
             <Image
-              src={'http://localhost:3000/images/prod/prodi_6.jpg'}
+              src={'/images/prod/prodi_6.jpg'}
               alt="лого стандарма"
               width={200}
               height={320}
