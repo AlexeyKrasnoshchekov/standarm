@@ -6,33 +6,36 @@ function News({ posts }: any): JSX.Element {
   // console.log('first', posts);
 
   return (
-    <div>
-      {posts.map((post: Post) => {
-        // console.log('777', post.images[0]);
-        return (
-          <div
-            key={post.id}
-            className={styles.wrapper}
-            style={{ padding: 20, borderBottom: '1px solid #ccc' }}
-          >
-            {post.images.length !== 0 && (
-              <Image
-                key={post.images[0]}
-                src={post.images[0]}
-                alt="лого стандарма"
-                width={300}
-                height={300}
-                style={{ objectFit: 'contain' }}
-              />
-            )}
-            <div className={styles.titleWrapper}>
-              {/* <h2>{post.title}</h2> */}
-              <Link href={`news/${post.id}`}>{post.title}</Link>
-              <p>{post.dateString}</p>
+    <div className={styles.outerWrapper}>
+      <h2 className={styles.heading}>Новости компании</h2>
+      <div className={styles.wrapper}>
+        {posts.map((post: Post) => {
+          return (
+            <div
+              key={post.id}
+              className={styles.innerWrapper}
+              style={{ padding: 20, borderBottom: '1px solid #ccc' }}
+            >
+              {post.images.length !== 0 && (
+                <Image
+                  key={post.images[0]}
+                  src={post.images[0]}
+                  alt="лого стандарма"
+                  width={300}
+                  height={300}
+                  style={{ objectFit: 'cover' }}
+                />
+              )}
+              <Link className={styles.titleWrapper} href={`news/${post.id}`}>
+                <h3 className={styles.title}>
+                  {post.titleShort ? post.titleShort : post.title}
+                </h3>
+                <p className={styles.date}>{post.dateString}</p>
+              </Link>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
