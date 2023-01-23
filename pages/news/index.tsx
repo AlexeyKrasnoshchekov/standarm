@@ -1,5 +1,5 @@
-import styles from './news/News.module.css';
-import { withLayout } from '../layout/Layout';
+import styles from './News.module.css';
+import { withLayout } from '../../layout/Layout';
 import Image from 'next/image';
 
 function News({ posts }: any): JSX.Element {
