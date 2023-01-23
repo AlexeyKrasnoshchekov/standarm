@@ -9,7 +9,7 @@ function Contact(): JSX.Element {
     <div className={styles.wrapper}>
       <h2 className={styles.title}>НАШИ СОТРУДНИКИ РЯДОМ С ВАМИ</h2>
       <Image
-        src={'/images/map.jpg'}
+        src={'/images/map.png'}
         alt="карта с филиалами"
         width={900}
         height={470}

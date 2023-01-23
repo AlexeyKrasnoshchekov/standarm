@@ -16,7 +16,7 @@
   .heading {
     text-transform: uppercase;
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: var(--xl);
   }
   .heading:hover {
     text-transform: uppercase;
@@ -26,7 +26,7 @@
   }
   .text {
     width: 50%;
-    font-size: 1.3rem !important;
+    font-size: var(--l) !important;
   }
   .textWrapper {
     height: 100%;
@@ -39,6 +39,6 @@
   .lowerMenuIcon {
     width: 120px !important;
     height: 120px !important;
-    font-size: 1.1rem !important;
+    font-size: var(--m) !important;
     box-shadow: 5px 5px 5px gray;
   }

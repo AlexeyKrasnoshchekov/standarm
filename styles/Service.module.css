@@ -17,18 +17,18 @@
     min-height: 3rem;
     
     margin: 0;
-    font-size: 1.5rem;
+    font-size: var(--xl);
   }
   .title {
     text-transform: uppercase;
     text-align: center;
     margin: 3rem 0;
-    font-size: 2rem;
+    font-size: var(--xxl);
   }
   .text {
     max-width: 270px;
     
-    font-size: 1.3rem;
+    font-size: var(--l);
   }
   .gradient {
     display: block;

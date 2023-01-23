@@ -5,7 +5,7 @@
 
 }
 .waterHeading{
-    font-size: 1.5rem;
+    font-size: var(--xl);
 }
 .waterLink{
     margin-left: 1rem;
@@ -35,7 +35,7 @@
 
 }
 .title{
-    font-size: 2rem;
+    font-size: var(--xxxl);
 }
 .innerWrapper {
     display: flex;
@@ -46,6 +46,6 @@
     padding-right: 5rem;
 }
 .textWrapper p {
-    font-size: 1.5rem;
+    font-size: var(--xl);
     text-indent: 1.3rem;
 }

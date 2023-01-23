@@ -9,7 +9,7 @@
     border-bottom: none !important;
 }
 .heading {
-    font-size: 2rem;
+    font-size: var(--xxxl);
     text-transform: uppercase;
     padding: 1rem 0;
 }
@@ -29,7 +29,7 @@
     background-color: var(--main);
 }
 .title {
-    font-size: 1.3rem;
+    font-size: var(--l);
     text-transform: uppercase;
     font-weight: 500;
 }

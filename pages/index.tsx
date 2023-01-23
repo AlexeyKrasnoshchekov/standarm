@@ -29,7 +29,7 @@ const imagesCarousel = [
 // ];
 
 function Home({ posts }: any): JSX.Element {
-  console.log('first', posts);
+  // console.log('first', posts);
   const titles = posts.map((post: Post) => post.title);
 
   const [index, setIndex] = useState(0);
@@ -128,49 +128,61 @@ function Home({ posts }: any): JSX.Element {
           ))}
         </Carousel>
         <div className={styles.lowerMenu}>
-          <MenuItem
-            className={styles.lowerMenuIcon}
-            appearance="primary"
-            icon="water"
-          >
-            Технологии воды
-          </MenuItem>
-          <MenuItem
-            className={styles.lowerMenuIcon}
-            appearance="primary"
-            icon="klin"
-          >
-            Задвижки клиновые
-          </MenuItem>
-          <MenuItem
-            className={styles.lowerMenuIcon}
-            appearance="primary"
-            icon="shiber"
-          >
-            Задвижки шиберные
-          </MenuItem>
-          <MenuItem
-            className={styles.lowerMenuIcon}
-            appearance="primary"
-            icon="disk"
-          >
-            Затворы дисковые
-          </MenuItem>
-          <MenuItem
-            className={styles.lowerMenuIcon}
-            appearance="primary"
-            icon="kran"
-          >
-            <span>Краны</span>
-            <span>шаровые</span>
-          </MenuItem>
-          <MenuItem
-            className={styles.lowerMenuIcon}
-            appearance="primary"
-            icon="arma"
-          >
-            Автоматизация арматуры
-          </MenuItem>
+          <Link href={'/water'}>
+            <MenuItem
+              className={styles.lowerMenuIcon}
+              appearance="primary"
+              icon="water"
+            >
+              Технологии воды
+            </MenuItem>
+          </Link>
+          <Link href={'/klin'}>
+            <MenuItem
+              className={styles.lowerMenuIcon}
+              appearance="primary"
+              icon="klin"
+            >
+              Задвижки клиновые
+            </MenuItem>
+          </Link>
+          <Link href={'/shiber'}>
+            <MenuItem
+              className={styles.lowerMenuIcon}
+              appearance="primary"
+              icon="shiber"
+            >
+              Задвижки шиберные
+            </MenuItem>
+          </Link>
+          <Link href={'/disk'}>
+            <MenuItem
+              className={styles.lowerMenuIcon}
+              appearance="primary"
+              icon="disk"
+            >
+              Затворы дисковые
+            </MenuItem>
+          </Link>
+          <Link href={'/kran'}>
+            <MenuItem
+              className={styles.lowerMenuIcon}
+              appearance="primary"
+              icon="kran"
+            >
+              <span>Краны</span>
+              <span>шаровые</span>
+            </MenuItem>
+          </Link>
+          <Link href={'/arma'}>
+            <MenuItem
+              className={styles.lowerMenuIcon}
+              appearance="primary"
+              icon="arma"
+            >
+              Автоматизация арматуры
+            </MenuItem>
+          </Link>
         </div>
       </div>
     </div>

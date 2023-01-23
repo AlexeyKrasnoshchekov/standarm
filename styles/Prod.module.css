@@ -56,7 +56,7 @@
   .menuItem {
     width: 120px !important;
     height: 120px !important;
-    font-size: 1.1rem !important;
+    font-size: var(--m) !important;
     box-shadow: 5px 5px 5px gray;
   }
 
