@@ -1,0 +1,231 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.innerWrapper {
+    display: flex;
+    width: 100%;
+    padding: 4rem 0;
+    align-items: center;
+    border: 0px solid var(--gray);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+
+}
+.listWrapper {
+    display: flex;
+}
+.textWrapper, .listWrapper {
+    width: 50%;
+}
+.listInnerWrapper, .image {
+    width: 50%;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 0 1.5rem;
+    font-size: var(--l);
+}
+.list li {
+    margin-bottom: 0.5rem;
+}
+.list span{
+    color: var(--main);
+    margin-right: 0.5rem;
+}
+.listTitle {
+    text-align: center;
+    font-size: var(--xl);
+}
+.textWrapper {
+    width: 100%;
+    color: var(--white);
+    font-size: var(--m);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--black);
+
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.textWrapper .text {
+    width: 50%;
+    font-size: var(--l);
+}
+.textWrapper p {
+    font-size: var(--l);
+}
+.link {
+    color: var(--main);
+    text-decoration: underline;
+}
+.link:hover {
+    color: var(--gray);
+    text-decoration: none;
+}
+.middleWrapper {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 10%;
+}
+.left50 .list {
+    padding-left: 3rem;
+}
+.right50 .list {
+    padding-left: 3rem;
+}
+.left30 {
+    width: 30%;
+}
+.right70 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.left70 {
+    width: 70%;
+}
+
+.middle40 {
+    display: flex;
+    min-width: 40%;
+    padding: 5% 10% 0 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.left50 {
+    width: 50%;
+    padding-right: 1.5rem;
+}
+.right50 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+}
+.rightTextWrapper {
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: var(--l);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imageLeft {
+    float: left;
+    margin-right: 2rem;
+}
+.menuWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    padding: 0 10%;
+}
+.menuItem {
+    width: 120px !important;
+    height: 120px !important;
+    font-size: var(--m) !important;
+    box-shadow: 5px 5px 5px gray;
+  }
+.imageRight {
+    float: right;
+    margin-left: 2rem;
+}
+.text {
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-size: var(--l);
+}
+.titleWrapper {
+    display: block;
+    width: 100vw;
+    background-color: var(--main);
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+.textInnerWrapper {
+    display: flex;
+    padding: 0 2rem 2rem 2rem;
+    
+    width: 50%;
+    font-size: var(--l);
+}
+.inner span {
+    font-size: var(--xxl);
+    color:var(--main);
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.chevron {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+.text {
+    padding: 0;
+    margin: 0;
+}
+.inner {
+    width: 100%;
+    display: flex;
+    padding: 2rem 10%;
+    font-size: var(--l);
+    align-items: flex-start;
+}
+.inner .icon {
+    margin-right: 1rem;
+}
+.listInnerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.imageWrapper h4 {
+    font-size: var(--l);
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.imageCenter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.flex {
+    display: flex;
+    padding: 0 10%;
+}
+.gradient {
+    display: block;
+    min-height: 20vh;
+    width: 100vw;
+    
+    margin-top: auto;
+    background: linear-gradient( transparent, lightgray);
+}

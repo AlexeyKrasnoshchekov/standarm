@@ -1,6 +1,7 @@
 import styles from '../styles/Service.module.css';
 import { withLayout } from '@/layout/Layout';
 import Image from 'next/image';
+import { HiChevronDoubleDown } from 'react-icons/hi';
 
 function Service(): JSX.Element {
   return (
@@ -18,14 +19,10 @@ function Service(): JSX.Element {
             style={{ objectFit: 'contain' }}
           />
           <div className={styles.inner}>
-            <div className={styles.icon}>
-              <Image
-                src={'/images/icons/ico2.png'}
-                alt="иконка"
-                width={20}
-                height={33}
-              />
-            </div>
+            <span className={styles.icon}>
+              <HiChevronDoubleDown />
+              <HiChevronDoubleDown className={styles.chevron} />
+            </span>
             <div className={styles.textWrapper}>
               <h3 className={styles.heading}>КВАЛИФИЦИРОВАННЫЙ ПЕРСОНАЛ</h3>
               <p className={styles.text}>
@@ -48,14 +45,10 @@ function Service(): JSX.Element {
             style={{ objectFit: 'contain' }}
           />
           <div className={styles.inner}>
-            <div className={styles.icon}>
-              <Image
-                src={'/images/icons/ico2.png'}
-                alt="иконка"
-                width={20}
-                height={33}
-              />
-            </div>
+            <span className={styles.icon}>
+              <HiChevronDoubleDown />
+              <HiChevronDoubleDown className={styles.chevron} />
+            </span>
             <div className={styles.textWrapper}>
               <h3 className={styles.heading}>ОТВЕТСТВЕННЫЙ ПОДХОД</h3>
               <p className={styles.text}>
@@ -76,14 +69,10 @@ function Service(): JSX.Element {
             style={{ objectFit: 'contain' }}
           />
           <div className={styles.inner}>
-            <div className={styles.icon}>
-              <Image
-                src={'/images/icons/ico2.png'}
-                alt="иконка"
-                width={20}
-                height={33}
-              />
-            </div>
+            <span className={styles.icon}>
+              <HiChevronDoubleDown />
+              <HiChevronDoubleDown className={styles.chevron} />
+            </span>
             <div className={styles.textWrapper}>
               <h3 className={styles.heading}>ДОВЕРИЕ</h3>
               <p className={styles.text}>

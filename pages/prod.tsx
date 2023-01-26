@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 import Link from 'next/link';
 import MenuItem from '@/components/MenuItem/MenuItem';
+import { HiChevronDoubleDown } from 'react-icons/hi';
 
 function Prod(): JSX.Element {
   return (
@@ -86,14 +87,10 @@ function Prod(): JSX.Element {
               style={{ objectFit: 'contain' }}
             />
             <div className={styles.inner}>
-              <div className={styles.icon}>
-                <Image
-                  src={'/images/icons/ico2.png'}
-                  alt="иконка"
-                  width={20}
-                  height={33}
-                />
-              </div>
+              <span className={styles.icon}>
+                <HiChevronDoubleDown />
+                <HiChevronDoubleDown className={styles.chevron} />
+              </span>
               <div className={styles.textWrapper}>
                 <h3 className={styles.heading}>КАЧЕСТВО КАК ОСНОВА</h3>
                 <p className={styles.text}>
@@ -115,14 +112,11 @@ function Prod(): JSX.Element {
               style={{ objectFit: 'contain' }}
             />
             <div className={styles.inner}>
-              <div className={styles.icon}>
-                <Image
-                  src={'/images/icons/ico2.png'}
-                  alt="иконка"
-                  width={20}
-                  height={33}
-                />
-              </div>
+              <span className={styles.icon}>
+                <HiChevronDoubleDown />
+                <HiChevronDoubleDown className={styles.chevron} />
+              </span>
+
               <div className={styles.textWrapper}>
                 <h3 className={styles.heading}>ИНТЕЛЛЕКТ КАК РЕСУРС</h3>
                 <p className={styles.text}>
@@ -144,14 +138,10 @@ function Prod(): JSX.Element {
               style={{ objectFit: 'contain' }}
             />
             <div className={styles.inner}>
-              <div className={styles.icon}>
-                <Image
-                  src={'/images/icons/ico2.png'}
-                  alt="иконка"
-                  width={20}
-                  height={33}
-                />
-              </div>
+              <span className={styles.icon}>
+                <HiChevronDoubleDown />
+                <HiChevronDoubleDown className={styles.chevron} />
+              </span>
               <div className={styles.textWrapper}>
                 <h3 className={styles.heading}>УВАЖЕНИЕ К ПАРТНЁРАМ</h3>
                 <p className={styles.text}>
@@ -172,14 +162,10 @@ function Prod(): JSX.Element {
               style={{ objectFit: 'contain' }}
             />
             <div className={styles.inner}>
-              <div className={styles.icon}>
-                <Image
-                  src={'/images/icons/ico2.png'}
-                  alt="иконка"
-                  width={20}
-                  height={33}
-                />
-              </div>
+              <span className={styles.icon}>
+                <HiChevronDoubleDown />
+                <HiChevronDoubleDown className={styles.chevron} />
+              </span>
               <div className={styles.textWrapper}>
                 <h3 className={styles.heading}>ШИРОКИЙ СПЕКТР ПРОДУКЦИИ</h3>
                 <p className={styles.text}>
@@ -203,14 +189,10 @@ function Prod(): JSX.Element {
               style={{ objectFit: 'contain' }}
             />
             <div className={styles.inner}>
-              <div className={styles.icon}>
-                <Image
-                  src={'/images/icons/ico2.png'}
-                  alt="иконка"
-                  width={20}
-                  height={33}
-                />
-              </div>
+              <span className={styles.icon}>
+                <HiChevronDoubleDown />
+                <HiChevronDoubleDown className={styles.chevron} />
+              </span>
               <div className={styles.textWrapper}>
                 <h3 className={styles.heading}>ВЫСОЧАЙШАЯ НАДЁЖНОСТЬ</h3>
                 <p className={styles.text}>
@@ -235,14 +217,10 @@ function Prod(): JSX.Element {
               style={{ objectFit: 'contain' }}
             />
             <div className={styles.inner}>
-              <div className={styles.icon}>
-                <Image
-                  src={'/images/icons/ico2.png'}
-                  alt="иконка"
-                  width={20}
-                  height={33}
-                />
-              </div>
+              <span className={styles.icon}>
+                <HiChevronDoubleDown />
+                <HiChevronDoubleDown className={styles.chevron} />
+              </span>
               <div className={styles.textWrapper}>
                 <h3 className={styles.heading}>ОПИРАЕМСЯ НА СТАНДАРТЫ</h3>
                 <p className={styles.text}>

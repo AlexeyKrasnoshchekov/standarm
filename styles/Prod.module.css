@@ -37,7 +37,17 @@
     display: flex;
   }
   .icon {
-    padding: 5px;
+    padding-right: 5px;
+    font-size: var(--xxxl);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: var(--main);
+  }
+  .chevron {
+    position: absolute;
+    top: 15px;
+    left: 0;
   }
   .heading {
     width: 170px;
