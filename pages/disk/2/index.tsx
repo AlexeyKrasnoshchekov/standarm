@@ -1,13 +1,15 @@
-import styles from './Shiber.module.css';
+import styles from './Disk.module.css';
 import { withLayout } from '@/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaChevronRight } from 'react-icons/fa';
 
-function Shiber(): JSX.Element {
+function Disk2(): JSX.Element {
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.title}>ЗАДВИЖКА ШИБЕРНАЯ ТИП СТМ 3</h2>
+      <h2 className={styles.title}>
+        ЗАТВОР ДИСКОВЫЙ 2-ЭКСЦЕНТРИКОВЫЙ С МЯГКИМ УПЛОТНЕНИЕМ ТИП СТМ Д
+      </h2>
       <div className={styles.middleWrapper}>
         <div className={styles.left50}>
           <p className={styles.text}>
@@ -17,20 +19,21 @@ function Shiber(): JSX.Element {
             транспортировании сжиженного природного газа.
           </p>
           <p className={styles.text}>
-            Также шиберные задвижки не чувствительны к загрязнённым средам,
-            поэтому они широко применяются в горно-обогатительных производствах,
-            в камерных насосах для транспортирования абразивных сред, в
-            целлюлозно-бумажной промышленности для работы на пульпе, в
-            фильтр-прессах для сепарации жидкой и твёрдой фаз, в системах
-            пневмотранспорта сыпучих сред и пр.
+            Конструкция дискового затвора выполнена таким образом, что в отличие
+            от шарового крана, запирание осуществляется за счет поджима диска к
+            седлу в конечной точке поворота, при этом трение между диском и
+            седлом присутствует лишь на протяжении 5...8 градусов от общего угла
+            поворота в момент закрытия и открытия дискового затвора. Это
+            обеспечивает возможность длительной эксплуатации без повреждения
+            уплотнения.
           </p>
         </div>
         <div className={styles.right50}>
           <Image
-            src={'/images/prod_2_1.png'}
-            alt="задвижка шиберная"
+            src={'/images/prod_3_1.png'}
+            alt="завтвор дисковый"
             width={200}
-            height={400}
+            height={380}
           />
         </div>
       </div>
@@ -48,70 +51,10 @@ function Shiber(): JSX.Element {
             legacyBehavior
             download
             className={styles.link}
-            href={'/prod/shiber_tl008.pdf'}
+            href={'/prod/disk_tl006.pdf'}
           >
             <a className={styles.link} target="_blank">
-              Задвижка шиберная Тип СТМ З 14
-            </a>
-          </Link>
-        </div>
-        <div className={styles.linkWrapper}>
-          <Image
-            src={'/images/icons/ico_opr.png'}
-            alt="иконка"
-            width={27}
-            height={40}
-            className={styles.icon}
-          />
-          <span>Краткое описание:</span>
-          <Link
-            legacyBehavior
-            download
-            className={styles.link}
-            href={'/prod/shiber_ko9.pdf'}
-          >
-            <a className={styles.link} target="_blank">
-              Задвижка шиберная облегчённой конструкции Тип СТМ З 14-О
-            </a>
-          </Link>
-        </div>
-        <div className={styles.linkWrapper}>
-          <Image
-            src={'/images/icons/ico_opr.png'}
-            alt="иконка"
-            width={27}
-            height={40}
-            className={styles.icon}
-          />
-          <span>Краткое описание:</span>
-          <Link
-            legacyBehavior
-            download
-            className={styles.link}
-            href={'/prod/shiber_ko10.pdf'}
-          >
-            <a className={styles.link} target="_blank">
-              Задвижка шиберная с составным шибером Тип СТМ З 15
-            </a>
-          </Link>
-        </div>
-        <div className={styles.linkWrapper}>
-          <Image
-            src={'/images/icons/ico_opr.png'}
-            alt="иконка"
-            width={27}
-            height={40}
-            className={styles.icon}
-          />
-          <span>Краткое описание:</span>
-          <Link
-            legacyBehavior
-            download
-            className={styles.link}
-            href={'/prod/shiber_ko11.pdf'}
-          >
-            <a className={styles.link} target="_blank">
-              Задвижка шиберная с составным шибером топливный газ СТМ З 15-Т
+              Затвор дисковый 2-эксцентриковый Тип СТМ Д 41
             </a>
           </Link>
         </div>
@@ -121,25 +64,25 @@ function Shiber(): JSX.Element {
           <tbody>
             <tr>
               <td className={styles.cell}>Номинальный диаметр</td>
-              <td className={styles.cell}>DN 50&divide;1500 мм</td>
+              <td className={styles.cell}>DN 50&divide;1200 мм</td>
             </tr>
             <tr>
               <td className={styles.cell}>Номинальное давление</td>
-              <td className={styles.cell}>PN 1,0&divide;25,0 МПа</td>
+              <td className={styles.cell}>PN 1,0&divide;10,0 МПа</td>
             </tr>
             <tr>
               <td className={styles.cell}>Материал корпуса</td>
               <td className={styles.cell}>
-                ст. 20, ст. 20ГЛ, ст. 20Л, ст. 25Л, ст. 30Л, ст. 20ГМЛ, ст.
-                09Г2С, ст. 15ГЛ, А216 WCB, А216 WCC, А352 LCB, А352 LCC
+                ст. 20, ст. 20ГЛ, Ст. 09Г2С, Ст. 25Л, Ст. 08Х17Н13М2Т, Ст.
+                12Х18Н12МЗТЛ, А216 WCB, А351 CF8M
               </td>
             </tr>
             <tr>
               <td className={styles.cell}>Производственный ряд</td>
               <td className={styles.cell}>
-                PN 1,0&divide;4,0 МПа DN 50&divide;1500 мм<br></br> PN 10,0 МПа
-                DN 50&divide;1200 мм<br></br> PN 16,0 МПа DN 50&divide;700 мм
-                <br></br>PN 25,0 МПа DN 50&divide;500 мм
+                PN 1,0&divide;2,5 МПа DN 50&divide;1200 мм<br></br> PN 4,0 МПа
+                DN 80&divide;1200 мм<br></br> PN 6,3&divide;10,0 МПа DN
+                100&divide;600 мм
               </td>
             </tr>
             <tr>
@@ -149,15 +92,13 @@ function Shiber(): JSX.Element {
             <tr>
               <td className={styles.cell}>Рабочая температура</td>
               <td className={styles.cell}>
-                -101°С ÷ +350°С - широкий диапазон рабочих температур в
+                -60°С &divide; +260°С - широкий диапазон рабочих температур в
                 зависимости от применяемой марки стали
               </td>
             </tr>
             <tr>
               <td className={styles.cell}>Стандарты и нормы проектирования</td>
-              <td className={styles.cell}>
-                АPI 6D, API 608, ASME В16.34, ISO 17292, ASMEVIII
-              </td>
+              <td className={styles.cell}>API 609, ASME В16.34</td>
             </tr>
             <tr>
               <td className={styles.cell}>Форма фланцев</td>
@@ -193,27 +134,25 @@ function Shiber(): JSX.Element {
           <ul className={styles.list}>
             <li>
               <span>{<FaChevronRight />}</span>
-              Полнопроходная конструкция
+              Шпиндель с повышенной герметичностью
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Крышка с соединением на болтах
+              Мягкое уплотнение
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Самоцентрующийся сальник
+              Полностью закрытые уплотнением крутого сечения и втулками опор
+              диска концы шпинделя из нержавеющей стали
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Фланцевое присоединение к трубопроводу
+              Самосмазывающиеся бронзовые втулки шпинделя
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Ограничитель хода шпинделя
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Местный указатель положения
+              Износостойкое и коррозионноустойчивое, защищенное от смещения
+              седло
             </li>
           </ul>
         </div>
@@ -223,32 +162,20 @@ function Shiber(): JSX.Element {
           <ul className={styles.list}>
             <li>
               <span>{<FaChevronRight />}</span>
-              Неполнопроходная конструкция
+              Огнестойкое исполнение в соответствии с ГОСТ 30247.0-94, СТ ЦКБА
+              001-2003, API 607, BS 6755-2.
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Система уплотнения между штоком и крышкой
+              Удлинённый шпиндель
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Футерованный шибер для сред, содержащих механические примеси
+              Специальные материалы
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Уплотнение «металл-по-металлу» с упрочняющим покрытием
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Ввод смазки, дренажный и сбросной клапаны
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Удлиненный шпиндель
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Соответствие материалов требованиям ГОСТ 53678-2009, ГОСТ
-              53679-2009, EN ISO 15156-1, NACE MR 0103
+              Нестандартная строительная длина
             </li>
           </ul>
         </div>
@@ -257,44 +184,20 @@ function Shiber(): JSX.Element {
           <ul className={styles.list}>
             <li>
               <span>{<FaChevronRight />}</span>
-              Износостойкость
+              За счет двойного эксцентриситета в начале поворотного движения
+              открывания возникает вращательное движение, на которое
+              накладывается поступательное движение. Затвор поворачивается и
+              одновременно движется по направлению от посадочного кольца. Таким
+              образом, уже при небольшой степени открытия он приподнимается с
+              седла, за счет чего уплотнительное кольцо разгружается. Такая
+              конструкция уменьшает износ уплотнения и снижает крутящий момент,
+              благодаря чему затворы с двойным эксцентриком могут выдерживать
+              свыше 100 000 циклов закрытия и открытия при сохранении
+              герметичности.
             </li>
             <li>
               <span>{<FaChevronRight />}</span>
-              Надежность уплотнений при эксплуатации
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Аварийное закрытие
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Безопасный сброс давления
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Простота в обслуживании
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Антикоррозионное покрытие
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Стойкость к сероводородному растрескиванию
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Огнестойкость
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Антистатическое устройство
-            </li>
-            <li>
-              <span>{<FaChevronRight />}</span>
-              Корпус шиберной задвижки и трубопровод имеют одинаковый срок
-              службы
+              Ремонтопригодность с возможностью легкой замены элементов уплотнений.
             </li>
           </ul>
         </div>
@@ -305,4 +208,4 @@ function Shiber(): JSX.Element {
   );
 }
 
-export default withLayout(Shiber);
+export default withLayout(Disk2);
