@@ -6,7 +6,7 @@
 }
 .title {
     font-size: var(--xxl);
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 .list {
     list-style: none;
