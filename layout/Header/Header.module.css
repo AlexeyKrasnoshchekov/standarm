@@ -1,13 +1,5 @@
-.headerOuter {
-    width: 100%;
-    background-color: lightblue;
-    
-}
-
 .headerWrapper {
     display: grid;
-    width: 100%;
-    padding: 0 10rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
