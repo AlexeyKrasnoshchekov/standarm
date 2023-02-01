@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import { withLayout } from '../layout/Layout';
+import cn from 'classnames';
 
 import MenuItem from '@/components/MenuItem/MenuItem';
 import Carousel from 'react-responsive-carousel/lib/js/components/Carousel/index';
@@ -28,7 +29,7 @@ const imagesCarousel = [
 //   '/images/news/1/sklad2.jpg',
 // ];
 
-function Home({ posts }: any): JSX.Element {
+function Home({ posts, className, ...props }: any): JSX.Element {
   // console.log('first', posts);
   const titles = posts.map((post: Post) => post.title);
 
@@ -64,7 +65,7 @@ function Home({ posts }: any): JSX.Element {
   // }, [index]);
 
   return (
-    <div className={styles.bodyWrapper}>
+    <div className={cn(className, styles.bodyWrapper)} {...props}>
       <div className={styles.bodyLeft}>
         <div className={styles.news}>
           <Link className={styles.newsHeader} href={'/news'}>
@@ -86,15 +87,16 @@ function Home({ posts }: any): JSX.Element {
             {posts &&
               posts.map((post: Post) => (
                 <>
-                  <div className="slide" key={post.id}>
+                  <div className={styles.slide} key={post.id}>
                     <Image
                       src={post.images[0]}
                       alt="фото"
-                      width={176}
-                      height={235}
+                      fill
+                      // width={176}
+                      // height={235}
                     />
                   </div>
-                  <h3 id="title">
+                  <h3 className={styles.newsTitleWrapper}>
                     <Link
                       href={`/news/${post.id}`}
                       className={styles.newsTitle}
@@ -121,9 +123,15 @@ function Home({ posts }: any): JSX.Element {
           swipeable={false}
         >
           {imagesCarousel.map((URL, index) => (
-            <div className="slide" key={index}>
+            <div className={styles.slideMain} key={index}>
               {/* <img alt="sample_file" src={URL}  /> */}
-              <Image src={URL} alt="фото" width={625} height={345} />
+              <Image
+                src={URL}
+                alt="фото"
+                fill
+                // width={625}
+                // height={345}
+              />
             </div>
           ))}
         </Carousel>

@@ -13,12 +13,21 @@
     
     
     border-radius: 50%;
-    width: 97px;
-    height: 97px;
+    
     line-height: 16px;
 
     position: relative;
     
+}
+.normalSize {
+    width: 7.5rem;
+    height: 7.5rem;
+    font-size: var(--norm);
+}
+.bigSize {
+    width: 9rem;
+    height: 9rem;
+    font-size: var(--m);
 }
 
 .wrapper {

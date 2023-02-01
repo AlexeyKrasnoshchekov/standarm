@@ -14,64 +14,64 @@ function Prod(): JSX.Element {
     <div className={styles.wrapper}>
       <div className={styles.left}>
         <div className={styles.menuElemWrapper}>
-          <Link href={'/prod'} className={styles.menuElem}>
+          <Link href={'/water'} className={styles.menuElem}>
             <MenuItem className={styles.menuItem} appearance="primary">
               Технологии воды
             </MenuItem>
           </Link>
-          <Link href={''} className={styles.link}>
+          <Link href={'/water'} className={styles.link}>
             Проектирование, строительство и комплексная поставка систем очистки
             сточных вод промышленных предприятий и систем водоподготовки
           </Link>
         </div>
         <div className={styles.menuElemWrapper}>
-          <Link href={'/prod'} className={styles.menuElem}>
+          <Link href={'/klin'} className={styles.menuElem}>
             <MenuItem className={styles.menuItem} appearance="primary">
               Задвижки клиновые
             </MenuItem>
           </Link>
-          <Link href={''} className={styles.link}>
+          <Link href={'/klin'} className={styles.link}>
             Самая распространённая арматура для всех областей промышленности
           </Link>
         </div>
         <div className={styles.menuElemWrapper}>
-          <Link href={'/prod'} className={styles.menuElem}>
+          <Link href={'/shiber'} className={styles.menuElem}>
             <MenuItem className={styles.menuItem} appearance="primary">
               Задвижки шиберные
             </MenuItem>
           </Link>
-          <Link href={''} className={styles.link}>
+          <Link href={'/shiber'} className={styles.link}>
             Арматура для вязких сред и потоков с различными включениями
           </Link>
         </div>
         <div className={styles.menuElemWrapper}>
-          <Link href={'/prod'} className={styles.menuElem}>
+          <Link href={'/disk'} className={styles.menuElem}>
             <MenuItem className={styles.menuItem} appearance="primary">
               Затворы дисковые
             </MenuItem>
           </Link>
-          <Link href={''} className={styles.link}>
+          <Link href={'/disk'} className={styles.link}>
             Малогабаритная арматура для эксплуатации на различных давлениях и
             температурах
           </Link>
         </div>
         <div className={styles.menuElemWrapper}>
-          <Link href={'/prod'} className={styles.menuElem}>
+          <Link href={'/kran'} className={styles.menuElem}>
             <MenuItem className={styles.menuItem} appearance="primary">
               Краны шаровые
             </MenuItem>
           </Link>
-          <Link href={''} className={styles.link}>
+          <Link href={'/kran'} className={styles.link}>
             Наиболее надёжное решение для перекрытия потока
           </Link>
         </div>
         <div className={styles.menuElemWrapper}>
-          <Link href={'/prod'} className={styles.menuElem}>
+          <Link href={'/arma'} className={styles.menuElem}>
             <MenuItem className={styles.menuItem} appearance="primary">
               Автоматизация арматуры
             </MenuItem>
           </Link>
-          <Link href={''} className={styles.link}>
+          <Link href={'/arma'} className={styles.link}>
             Оснащение исполнительными механизмами и средствами АСУТП
           </Link>
         </div>

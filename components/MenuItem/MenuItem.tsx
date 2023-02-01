@@ -8,6 +8,7 @@ import Image from 'next/image';
 const MenuItem = ({
   children,
   appearance,
+  size = 'normal',
   icon = 'none',
   className,
   ...props
@@ -23,6 +24,8 @@ const MenuItem = ({
       className={cn(styles.menuItem, className, {
         [styles.primary]: appearance === 'primary',
         [styles.ghost]: appearance === 'ghost',
+        [styles.normalSize]: size === 'normal',
+        [styles.bigSize]: size === 'big',
       })}
       {...props}
     >

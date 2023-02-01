@@ -84,49 +84,61 @@ function Otr(): JSX.Element {
         </div>
       </div>
       <div className={styles.lowerMenu}>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="water"
-        >
-          Технологии воды
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="klin"
-        >
-          Задвижки клиновые
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="shiber"
-        >
-          Задвижки шиберные
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="disk"
-        >
-          Затворы дисковые
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="kran"
-        >
-          <span>Краны</span>
-          <span>шаровые</span>
-        </MenuItem>
-        <MenuItem
-          className={styles.lowerMenuIcon}
-          appearance="primary"
-          icon="arma"
-        >
-          Автоматизация арматуры
-        </MenuItem>
+        <Link href={'/water'} className={styles.menuElem}>
+          <MenuItem
+            className={styles.lowerMenuIcon}
+            appearance="primary"
+            icon="water"
+          >
+            Технологии воды
+          </MenuItem>
+        </Link>
+        <Link href={'/klin'} className={styles.menuElem}>
+          <MenuItem
+            className={styles.lowerMenuIcon}
+            appearance="primary"
+            icon="klin"
+          >
+            Задвижки клиновые
+          </MenuItem>
+        </Link>
+        <Link href={'/shiber'} className={styles.menuElem}>
+          <MenuItem
+            className={styles.lowerMenuIcon}
+            appearance="primary"
+            icon="shiber"
+          >
+            Задвижки шиберные
+          </MenuItem>
+        </Link>
+        <Link href={'/disk'} className={styles.menuElem}>
+          <MenuItem
+            className={styles.lowerMenuIcon}
+            appearance="primary"
+            icon="disk"
+          >
+            Затворы дисковые
+          </MenuItem>
+        </Link>
+        <Link href={'/kran'} className={styles.menuElem}>
+          <MenuItem
+            className={styles.lowerMenuIcon}
+            appearance="primary"
+            icon="kran"
+          >
+            <span>Краны</span>
+            <span>шаровые</span>
+          </MenuItem>
+        </Link>
+        <Link href={'/arma'} className={styles.menuElem}>
+          <MenuItem
+            className={styles.lowerMenuIcon}
+            appearance="primary"
+            icon="arma"
+          >
+            Автоматизация арматуры
+          </MenuItem>
+        </Link>
       </div>
     </>
   );

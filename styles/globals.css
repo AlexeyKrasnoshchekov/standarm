@@ -4,7 +4,7 @@ body {
 	padding: 0;	
 
 	font-family: var(--font-family);
-	font-size: 13px;
+	font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -40,6 +40,7 @@ a {
 	--green-light: #C8F8E4;
 	--main: #1267A2;
 	--font-family: 'pfdintextcomppro-regular', sans-serif;
+	--norm: 1rem;
 	--m: 1.1rem;
 	--l: 1.3rem;
 	--xl: 1.5rem;
@@ -63,5 +64,16 @@ a {
 	body {
 		color: white;
 		background: black;
+	}
+}
+
+@media (min-width: 1400px) {
+    html,
+	body {
+
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
 	}
 }

@@ -664,7 +664,7 @@ function Water(): JSX.Element {
       </div>
 
       <div className={styles.menuWrapper}>
-        <Link href={'/prod'}>
+        <Link href={'/klin'}>
           <MenuItem
             className={styles.menuItem}
             appearance="primary"
@@ -673,7 +673,7 @@ function Water(): JSX.Element {
             Задвижки клиновые
           </MenuItem>
         </Link>
-        <Link href={'/prod'}>
+        <Link href={'/shiber'}>
           <MenuItem
             className={styles.menuItem}
             appearance="primary"
@@ -682,7 +682,7 @@ function Water(): JSX.Element {
             Задвижки шиберные
           </MenuItem>
         </Link>
-        <Link href={'/prod'}>
+        <Link href={'/disk'}>
           <MenuItem
             className={styles.menuItem}
             appearance="primary"
@@ -691,7 +691,7 @@ function Water(): JSX.Element {
             Затворы дисковые
           </MenuItem>
         </Link>
-        <Link href={'/prod'}>
+        <Link href={'/kran'}>
           <MenuItem
             className={styles.menuItem}
             appearance="primary"
@@ -701,7 +701,7 @@ function Water(): JSX.Element {
             <span>шаровые</span>
           </MenuItem>
         </Link>
-        <Link href={'/prod'}>
+        <Link href={'/arma'}>
           <MenuItem
             className={styles.menuItem}
             appearance="primary"
