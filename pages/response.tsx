@@ -2,7 +2,7 @@ import styles from '../styles/Response.module.css';
 import { withLayout } from '@/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
-import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import { FaChevronRight } from 'react-icons/fa';
 
 function Response(): JSX.Element {
   return (
@@ -21,81 +21,46 @@ function Response(): JSX.Element {
 
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          <Image
-            src={'/images/icons/ico3.png'}
-            alt="иконка"
-            width={20}
-            height={33}
-          />
+          <span>{<FaChevronRight />}</span>
           <p className={styles.listText}>
             Соответствие продукции всем действующим стандартам на
             проектирование, производство и обслуживание
           </p>
         </li>
         <li className={styles.listItem}>
-          <Image
-            src={'/images/icons/ico3.png'}
-            alt="иконка"
-            width={20}
-            height={33}
-          />
+          <span>{<FaChevronRight />}</span>
           <p className={styles.listText}>
             Отклик на ваш запрос в течении одного рабочего дня
           </p>
         </li>
         <li className={styles.listItem}>
-          <Image
-            src={'/images/icons/ico3.png'}
-            alt="иконка"
-            width={20}
-            height={33}
-          />
+          <span>{<FaChevronRight />}</span>
           <p className={styles.listText}>
             Оперативный подбор оборудования по вашему опросному листу
           </p>
         </li>
         <li className={styles.listItem}>
-          <Image
-            src={'/images/icons/ico3.png'}
-            alt="иконка"
-            width={20}
-            height={33}
-          />
+          <span>{<FaChevronRight />}</span>
           <p className={styles.listText}>
             Своевременную поставку дополнительного оборудования и запасных
             частей
           </p>
         </li>
         <li className={styles.listItem}>
-          <Image
-            src={'/images/icons/ico3.png'}
-            alt="иконка"
-            width={20}
-            height={33}
-          />
+          <span>{<FaChevronRight />}</span>
           <p className={styles.listText}>
             Изготовление оборудования в самые короткие сроки
           </p>
         </li>
         <li className={styles.listItem}>
-          <Image
-            src={'/images/icons/ico3.png'}
-            alt="иконка"
-            width={20}
-            height={33}
-          />
+          <span>{<FaChevronRight />}</span>
           <p className={styles.listText}>
             Наш сервис-инженер сможет прибыть на ваш объект в течение нескольких
             дней
           </p>
         </li>
         <li className={styles.listItem}>
-          <Image
-            src={'/images/icons/ico3.png'}
-            alt="иконка"
-            width={20}
-            height={33}
-          />
+          <span>{<FaChevronRight />}</span>
           <p className={styles.listText}>
             Соблюдение договоренностей по срокам и условиям поставки
           </p>

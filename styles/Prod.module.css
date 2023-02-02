@@ -1,30 +1,26 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: 1 / -1; */
+    grid-template-columns: 27.5vw auto;
     grid-template-areas: 
       "bodyLeft bodyRight";
-      padding-top: 20px;
-      font-size: 16px !important;
-      padding: 2rem 0;
+    padding: 2rem 0;
   }
   .left {
     grid-area: bodyLeft;
-    /* outline: 1px solid yellow; */
-    padding-right: 1.5rem;
-    margin-right: 1.5rem;
     border: 0 solid var(--black);
     border-right-width: 2px;
+    padding-right: 0.5rem;
   }
   .right {
     grid-area: bodyRight;
-    /* outline: 1px solid red; */
+    padding-left: 1.5rem;
     min-height: calc(100vh - 250px);
   }
 
   .text {
     width: 170px;
     line-height: 1.3rem;
+    font-size: var(--l) !important;
   }
   .cardWrapper {
     display: grid;
@@ -64,12 +60,20 @@
   }
 
   .menuItem {
-    width: 120px !important;
-    height: 120px !important;
-    font-size: var(--m) !important;
     box-shadow: 5px 5px 5px gray;
   }
 
   .link:hover {
     color: var(--main);
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+  
+      /* outline: 2px solid blue; */
+      grid-template-columns: 27.5vw auto;
+    }
+  
+  
+      
   }

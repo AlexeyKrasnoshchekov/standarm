@@ -76,7 +76,11 @@
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 0 10%;
+    /* padding: 0 10%; */
+}
+.left50 ul {
+    padding: 0;
+    margin: 0;
 }
 .left50 .list {
     padding-left: 3rem;
@@ -85,6 +89,9 @@
     padding-left: 3rem;
 }
 .left30 {
+    width: 30%;
+}
+.right30 {
     width: 30%;
 }
 .right70 {
@@ -99,7 +106,7 @@
 .middle40 {
     display: flex;
     min-width: 40%;
-    padding: 5% 10% 0 10%;
+    padding: 0% 10%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -133,12 +140,9 @@
     justify-content: space-around;
     margin-bottom: 10vh;
     margin-top: 10vh;
-    padding: 0 10%;
+    /* padding: 0 10%; */
 }
 .menuItem {
-    width: 120px !important;
-    height: 120px !important;
-    font-size: var(--m) !important;
     box-shadow: 5px 5px 5px gray;
   }
 .imageRight {
@@ -185,7 +189,7 @@
 .inner {
     width: 100%;
     display: flex;
-    padding: 2rem 10%;
+    padding: 2rem 0;
     font-size: var(--l);
     align-items: flex-start;
 }
@@ -209,7 +213,7 @@
 .image {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 50%;
 }
 .imageCenter {
@@ -219,7 +223,7 @@
 }
 .flex {
     display: flex;
-    padding: 0 10%;
+    /* padding: 0 10%; */
 }
 .gradient {
     display: block;

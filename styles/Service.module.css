@@ -8,7 +8,6 @@
   }
 
   .heading {
-    width: 270px;
     min-height: 3rem;
     
     margin: 0;
@@ -52,15 +51,6 @@
   flex-direction: column;
   align-items: center;
   
-}
-.titleWrapper {
-
-  display: block;
-  width: 100vw;
-  background-color: var(--main);
-  text-align: center;
-  color: var(--white);
-  text-transform: uppercase;
 }
 .menuWrapper {
   width: 100%;

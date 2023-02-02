@@ -35,6 +35,7 @@ function Vstand(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="klin"
+            size="big"
           >
             Задвижки клиновые
           </MenuItem>
@@ -44,6 +45,7 @@ function Vstand(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="shiber"
+            size="big"
           >
             Задвижки шиберные
           </MenuItem>
@@ -53,6 +55,7 @@ function Vstand(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="disk"
+            size="big"
           >
             Затворы дисковые
           </MenuItem>
@@ -62,6 +65,7 @@ function Vstand(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="kran"
+            size="big"
           >
             <span>Краны</span>
             <span>шаровые</span>
@@ -72,6 +76,7 @@ function Vstand(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="arma"
+            size="big"
           >
             Автоматизация арматуры
           </MenuItem>

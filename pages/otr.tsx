@@ -89,6 +89,7 @@ function Otr(): JSX.Element {
             className={styles.lowerMenuIcon}
             appearance="primary"
             icon="water"
+            size="big"
           >
             Технологии воды
           </MenuItem>
@@ -98,6 +99,7 @@ function Otr(): JSX.Element {
             className={styles.lowerMenuIcon}
             appearance="primary"
             icon="klin"
+            size="big"
           >
             Задвижки клиновые
           </MenuItem>
@@ -107,6 +109,7 @@ function Otr(): JSX.Element {
             className={styles.lowerMenuIcon}
             appearance="primary"
             icon="shiber"
+            size="big"
           >
             Задвижки шиберные
           </MenuItem>
@@ -116,6 +119,7 @@ function Otr(): JSX.Element {
             className={styles.lowerMenuIcon}
             appearance="primary"
             icon="disk"
+            size="big"
           >
             Затворы дисковые
           </MenuItem>
@@ -125,6 +129,7 @@ function Otr(): JSX.Element {
             className={styles.lowerMenuIcon}
             appearance="primary"
             icon="kran"
+            size="big"
           >
             <span>Краны</span>
             <span>шаровые</span>
@@ -135,6 +140,7 @@ function Otr(): JSX.Element {
             className={styles.lowerMenuIcon}
             appearance="primary"
             icon="arma"
+            size="big"
           >
             Автоматизация арматуры
           </MenuItem>

@@ -37,8 +37,5 @@
     align-items: center;
   }
   .lowerMenuIcon {
-    width: 120px !important;
-    height: 120px !important;
-    font-size: var(--m) !important;
     box-shadow: 5px 5px 5px gray;
   }

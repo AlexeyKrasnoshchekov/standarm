@@ -4,12 +4,7 @@
     align-items: center;
     
 }
-/* .imageWrapper {
-    max-width: 62.5rem;
-    max-height: 31.25rem;
-} */
 .titleWrapper {
-
     display: block;
     width: 100vw;
     background-color: var(--main);
@@ -39,8 +34,19 @@
     background: linear-gradient( transparent, lightgray);
 }
 .menuItem {
-    width: 120px !important;
-    height: 120px !important;
-    font-size: var(--m) !important;
     box-shadow: 5px 5px 5px gray;
-  }
+}
+
+@media (min-width: 1400px) {
+    .headerMenu {
+        padding-left: 1.5rem;
+        padding-right: 7rem;
+    
+    }
+    .wrapper{
+
+        grid-template-columns: 5rem 16.5rem minmax(22.85rem, 90rem) 5rem;
+
+    
+    }
+}

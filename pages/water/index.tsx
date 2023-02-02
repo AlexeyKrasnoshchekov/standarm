@@ -257,6 +257,7 @@ function Water(): JSX.Element {
             alt="иконка"
             width={440}
             height={240}
+            style={{alignSelf:'center'}}
           />
           <p className={styles.text}>
             Мы также предлагаем сервисное обслуживание и готовы эксплуатировать
@@ -602,7 +603,7 @@ function Water(): JSX.Element {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          textAlign: 'center',
+          alignItems:'center',
         }}
       >
         <p className={styles.text}>
@@ -659,6 +660,7 @@ function Water(): JSX.Element {
             alt="иконка"
             width={550}
             height={360}
+            style={{alignSelf:'flex-end'}}
           />
         </div>
       </div>
@@ -669,6 +671,7 @@ function Water(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="klin"
+            size="big"
           >
             Задвижки клиновые
           </MenuItem>
@@ -678,6 +681,7 @@ function Water(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="shiber"
+            size="big"
           >
             Задвижки шиберные
           </MenuItem>
@@ -687,6 +691,7 @@ function Water(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="disk"
+            size="big"
           >
             Затворы дисковые
           </MenuItem>
@@ -696,6 +701,7 @@ function Water(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="kran"
+            size="big"
           >
             <span>Краны</span>
             <span>шаровые</span>
@@ -706,6 +712,7 @@ function Water(): JSX.Element {
             className={styles.menuItem}
             appearance="primary"
             icon="arma"
+            size="big"
           >
             Автоматизация арматуры
           </MenuItem>
