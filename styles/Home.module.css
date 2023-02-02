@@ -18,12 +18,19 @@
     margin-right: 1.5rem;
     border: 0 solid var(--black);
     border-right-width: 2px;
-  
+    background-image: url("/images/prod_1_1 30.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  /* opacity: 0.5; */
+  background-size: 80%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 .news{
   max-width: 50%;
-  position: relative;
 }
+
 .bodyRight {
   grid-area: bodyRight;
   
