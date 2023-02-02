@@ -9,9 +9,8 @@ import Link from 'next/link';
 function Vstand(): JSX.Element {
   return (
     <div className={styles.wrapper}>
-      {/* <div > */}
       <Image src={vstand} alt="лого стандарма" width={1000} height={497} />
-      {/* </div> */}
+
       <div className={styles.titleWrapper}>
         <h2>Высокий стандарт управления потоками</h2>
       </div>

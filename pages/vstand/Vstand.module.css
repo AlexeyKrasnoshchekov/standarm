@@ -4,6 +4,10 @@
     align-items: center;
     
 }
+/* .imageWrapper {
+    max-width: 62.5rem;
+    max-height: 31.25rem;
+} */
 .titleWrapper {
 
     display: block;
