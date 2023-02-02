@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>MyTop - лучший топ</title>
+        <title>Стандарм - трубопроводная арматура и средства автоматизации</title>
         <meta name="description" content="my meta tags" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
