@@ -15,14 +15,19 @@
     border-radius: 50%;
     
     line-height: 16px;
-
+    font-weight: 500;
     position: relative;
     
 }
 .normalSize {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: var(--min);
+}
+.middleSize {
     width: 7.5rem;
     height: 7.5rem;
-    font-size: var(--norm);
+    font-size: var(--min);
 }
 .bigSize {
     width: 9rem;
@@ -117,4 +122,13 @@
 .down {
     transform: rotate(90deg);
     /* transition: all 0.2s; */
+}
+
+@media (min-width: 1400px) {
+    .normalSize {
+        width: 7.5rem;
+        height: 7.5rem;
+        font-size: var(--norm);
+    }
+
 }

@@ -26,6 +26,7 @@ const MenuItem = ({
         [styles.ghost]: appearance === 'ghost',
         [styles.normalSize]: size === 'normal',
         [styles.bigSize]: size === 'big',
+        [styles.middleSize]: size === 'middle',
       })}
       {...props}
     >

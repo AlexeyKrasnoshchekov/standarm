@@ -4,5 +4,5 @@ export interface MenuItemProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivE
     children: ReactNode,
     appearance: 'primary' | 'ghost',
     icon?: 'water' | 'klin' | 'shiber' | 'disk' | 'kran' | 'arma' | 'none',
-    size?: 'normal' | 'big'
+    size?: 'normal' | 'big' | 'middle'
 }

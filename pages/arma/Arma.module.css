@@ -49,7 +49,7 @@
 }
 .listTitle {
     text-align: center;
-    font-size: var(--l);
+    font-size: var(--m);
 }
 .textWrapper {
     background-color: var(--main);
@@ -76,4 +76,11 @@
     
     margin-top: auto;
     background: linear-gradient( transparent, lightgray);
+}
+
+@media (min-width: 1400px) {
+    .listTitle {
+        font-size: var(--l);
+    }
+
 }

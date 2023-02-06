@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import styles from '../styles/Prod.module.css';
 
 import { withLayout } from '../layout/Layout';
@@ -15,7 +14,11 @@ function Prod(): JSX.Element {
       <div className={styles.left}>
         <div className={styles.menuElemWrapper}>
           <Link href={'/water'} className={styles.menuElem}>
-            <MenuItem className={styles.menuItem} size="big" appearance="primary">
+            <MenuItem
+              className={styles.menuItem}
+              size="big"
+              appearance="primary"
+            >
               Технологии воды
             </MenuItem>
           </Link>
@@ -26,7 +29,11 @@ function Prod(): JSX.Element {
         </div>
         <div className={styles.menuElemWrapper}>
           <Link href={'/klin'} className={styles.menuElem}>
-            <MenuItem className={styles.menuItem} size="big" appearance="primary">
+            <MenuItem
+              className={styles.menuItem}
+              size="big"
+              appearance="primary"
+            >
               Задвижки клиновые
             </MenuItem>
           </Link>
@@ -35,8 +42,26 @@ function Prod(): JSX.Element {
           </Link>
         </div>
         <div className={styles.menuElemWrapper}>
+          <Link href={'/pneumo'} className={styles.menuElem}>
+            <MenuItem
+              className={styles.menuItem}
+              size="big"
+              appearance="primary"
+            >
+              Пневматика
+            </MenuItem>
+          </Link>
+          <Link href={'/shiber'} className={styles.link}>
+            Пневматика
+          </Link>
+        </div>
+        <div className={styles.menuElemWrapper}>
           <Link href={'/shiber'} className={styles.menuElem}>
-            <MenuItem className={styles.menuItem} size="big" appearance="primary">
+            <MenuItem
+              className={styles.menuItem}
+              size="big"
+              appearance="primary"
+            >
               Задвижки шиберные
             </MenuItem>
           </Link>
@@ -46,7 +71,11 @@ function Prod(): JSX.Element {
         </div>
         <div className={styles.menuElemWrapper}>
           <Link href={'/disk'} className={styles.menuElem}>
-            <MenuItem className={styles.menuItem} size="big" appearance="primary">
+            <MenuItem
+              className={styles.menuItem}
+              size="big"
+              appearance="primary"
+            >
               Затворы дисковые
             </MenuItem>
           </Link>
@@ -57,7 +86,11 @@ function Prod(): JSX.Element {
         </div>
         <div className={styles.menuElemWrapper}>
           <Link href={'/kran'} className={styles.menuElem}>
-            <MenuItem className={styles.menuItem} size="big" appearance="primary">
+            <MenuItem
+              className={styles.menuItem}
+              size="big"
+              appearance="primary"
+            >
               Краны шаровые
             </MenuItem>
           </Link>
@@ -67,7 +100,11 @@ function Prod(): JSX.Element {
         </div>
         <div className={styles.menuElemWrapper}>
           <Link href={'/arma'} className={styles.menuElem}>
-            <MenuItem className={styles.menuItem} size="big" appearance="primary">
+            <MenuItem
+              className={styles.menuItem}
+              size="big"
+              appearance="primary"
+            >
               Автоматизация арматуры
             </MenuItem>
           </Link>

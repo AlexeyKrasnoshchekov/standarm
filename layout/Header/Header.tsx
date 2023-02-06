@@ -30,33 +30,33 @@ const Header = ({ className, ...props }: HeaderProps) => {
         </div>
         <div className={styles.headerMenu}>
           <Link href={'/prod'}>
-            <MenuItem className={styles.headerMenuItem} appearance="primary">
+            <MenuItem className={styles.headerMenuItem} appearance="primary" size="middle">
               Продукция
             </MenuItem>
           </Link>
           <Link href={'/otr'}>
-            <MenuItem className={styles.headerMenuItem} appearance="primary">
+            <MenuItem className={styles.headerMenuItem} appearance="primary" size="middle">
               Отрасли
             </MenuItem>
           </Link>
           <Link href={'/service'}>
-            <MenuItem className={styles.headerMenuItem} appearance="primary">
+            <MenuItem className={styles.headerMenuItem} appearance="primary" size="middle">
               Сервис
             </MenuItem>
           </Link>
           <Link href={'/oprlist'}>
-            <MenuItem className={styles.headerMenuItem} appearance="primary">
+            <MenuItem className={styles.headerMenuItem} appearance="primary" size="middle">
               Опросный лист
             </MenuItem>
           </Link>
           <Link href={'/contact'}>
-            <MenuItem className={styles.headerMenuItem} appearance="primary">
+            <MenuItem className={styles.headerMenuItem} appearance="primary" size="middle">
               Контакты
             </MenuItem>
           </Link>
           <Link href={'/response'}>
-            <MenuItem className={styles.headerMenuItem} appearance="primary">
-              Откзывы
+            <MenuItem className={styles.headerMenuItem} appearance="primary" size="middle">
+              Отзывы
             </MenuItem>
           </Link>
         </div>

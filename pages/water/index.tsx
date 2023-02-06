@@ -372,7 +372,7 @@ function Water(): JSX.Element {
         </div>
       </div>
       <div className={styles.innerWrapper}>
-        <div className={styles.left70}>
+        <div className={styles.left60}>
           <p className={styles.text}>
             Ливневые сточные воды. На загрязненность влияют уровень
             благоустройства территории, плотность населения, интенсивность
@@ -411,7 +411,7 @@ function Water(): JSX.Element {
             </li>
           </ul>
         </div>
-        <div className={styles.right30}>
+        <div className={styles.right40}>
           <Image
             src={'/images/ob_11.png'}
             alt="иконка"
@@ -422,7 +422,7 @@ function Water(): JSX.Element {
         </div>
       </div>
       <div className={styles.innerWrapper}>
-        <div className={styles.left70}>
+        <div className={styles.left60}>
           <p className={styles.text}>
             Станции выпускаются с производства уже укомплектованные всем
             необходимым оборудованием. <br></br>Сточные воды могут приниматься
@@ -444,7 +444,7 @@ function Water(): JSX.Element {
             системами MBBR и IFAS.
           </p>
         </div>
-        <div className={styles.right30}>
+        <div className={styles.right40}>
           <Image
             src={'/images/ob_12.png'}
             alt="иконка"

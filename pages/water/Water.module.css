@@ -94,6 +94,9 @@
 .right30 {
     width: 30%;
 }
+.right40 {
+    width: 40%;
+}
 .right70 {
     width: 70%;
     display: flex;
@@ -101,6 +104,9 @@
 }
 .left70 {
     width: 70%;
+}
+.left60 {
+    width: 60%;
 }
 
 .middle40 {

@@ -17,22 +17,13 @@ import {
 import Link from 'next/link';
 
 const imagesCarousel = [
-  '/images/prom_1.jpg',
-  '/images/prom_2.jpg',
-  '/images/prom_3.jpg',
-  '/images/prom_4.jpg',
+  '/images/prom_1.webp',
+  '/images/prom_2.webp',
+  '/images/prom_3.webp',
+  '/images/prom_4.webp',
 ];
 
-// const imagesSlider = [
-//   '/images/news/1/h.jpg',
-//   '/images/news/1/sklad1.jpg',
-//   '/images/news/1/sklad2.jpg',
-// ];
-
 function Home({ posts, className, ...props }: any): JSX.Element {
-  // console.log('first', posts);
-  const titles = posts.map((post: Post) => post.title);
-
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -86,14 +77,13 @@ function Home({ posts, className, ...props }: any): JSX.Element {
           >
             {posts &&
               posts.map((post: Post) => (
-                <>
-                  <div className={styles.slide} key={post.id}>
+                <div key={post.id}>
+                  <div className={styles.slide}>
                     <Image
                       src={post.images[0]}
-                      alt="фото"
+                      alt="фото новости компании"
                       fill
-                      // width={176}
-                      // height={235}
+                      quality={100}
                     />
                   </div>
                   <h3 className={styles.newsTitleWrapper}>
@@ -104,7 +94,7 @@ function Home({ posts, className, ...props }: any): JSX.Element {
                       {post.titleShort ? post.titleShort : post.title}
                     </Link>
                   </h3>
-                </>
+                </div>
               ))}
           </Carousel>
         </div>
@@ -124,13 +114,11 @@ function Home({ posts, className, ...props }: any): JSX.Element {
         >
           {imagesCarousel.map((URL, index) => (
             <div className={styles.slideMain} key={index}>
-              {/* <img alt="sample_file" src={URL}  /> */}
               <Image
                 src={URL}
-                alt="фото"
+                alt="фото сфер деятельности компании"
                 fill
-                // width={625}
-                // height={345}
+                quality={100}
               />
             </div>
           ))}
@@ -152,6 +140,15 @@ function Home({ posts, className, ...props }: any): JSX.Element {
               icon="klin"
             >
               Задвижки клиновые
+            </MenuItem>
+          </Link>
+          <Link href={'/pneumo'}>
+            <MenuItem
+              className={styles.lowerMenuIcon}
+              appearance="primary"
+              icon="shiber"
+            >
+              Пневматика
             </MenuItem>
           </Link>
           <Link href={'/shiber'}>
