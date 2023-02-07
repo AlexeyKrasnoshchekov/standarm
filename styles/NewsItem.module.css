@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 5rem;
+    max-height: 40rem;
     min-width: 15rem;
     /* position: relative; */
 }
@@ -29,8 +30,9 @@
   object-fit: contain;
   width: 100% !important;
   position: relative !important;
-  height: unset !important;
-  margin: 3rem 0;
+  max-height: 100%;
+  /* height: unset !important; */
+  /* margin: 3rem 0; */
 }
 .image > div{
     position: unset !important;
@@ -54,7 +56,8 @@
 
 @media (min-width: 1400px) {
     .wrapper {
-        max-height: calc(100vh - 16.85rem);  
+        /* min-height: calc(80vh - 16.85rem);   */
+        min-height: calc(100vh - 16.85rem);  
     }
 
 }
