@@ -97,7 +97,7 @@ function Water(): JSX.Element {
             производства.
           </p>
         </div>
-        <div className={styles.image}>
+        <div className={styles.image1}>
           <Image
             src={'/images/ob_2.png'}
             alt="иконка"
@@ -122,7 +122,7 @@ function Water(): JSX.Element {
             микроэлементов.
           </p>
         </div>
-        <div className={styles.image}>
+        <div className={styles.image1}>
           <Image
             src={'/images/ob_3.png'}
             alt="иконка"
@@ -270,9 +270,9 @@ function Water(): JSX.Element {
         <div className={styles.right50}>
           <Image
             src={'/images/ob_8.png'}
-            alt="иконка"
-            width={440}
-            height={240}
+            alt="схема работы станции"
+            layout="fill"
+            className={styles.image}
             style={{ alignSelf: 'center' }}
           />
           <p className={styles.text}>
@@ -690,6 +690,16 @@ function Water(): JSX.Element {
             size="big"
           >
             Задвижки клиновые
+          </MenuItem>
+        </Link>
+        <Link href={'/pneumo'}>
+          <MenuItem
+            className={styles.menuItem}
+            appearance="primary"
+            icon="shiber"
+            size="big"
+          >
+            Пневматика
           </MenuItem>
         </Link>
         <Link href={'/shiber'}>

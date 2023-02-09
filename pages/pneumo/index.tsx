@@ -6,37 +6,20 @@ import { HiChevronDoubleDown } from 'react-icons/hi';
 import { FaChevronRight } from 'react-icons/fa';
 import P from '@/components/P/P';
 import MenuItem from '@/components/MenuItem/MenuItem';
+import { useRouter } from 'next/router';
 
-function Water(): JSX.Element {
+function Pneumo(): JSX.Element {
+  const router = useRouter();
   const files = [
     {
       name: 'ОЛ Водопроводные очистные сооружения',
       link: '/oprlist/oprlist8.pdf',
     },
-    {
-      name: 'ОЛ Ливневые очистные сооружения',
-      link: '/oprlist/oprlist9.pdf',
-    },
-    {
-      name: 'ОЛ Очистка промышленных сточных вод',
-      link: '/oprlist/oprlist10.pdf',
-    },
-    {
-      name: 'ОЛ Очистка хоз-бытовых сточных вод',
-      link: '/oprlist/oprlist11.pdf',
-    },
-    {
-      name: 'ОЛ Цех мех обезвоживания',
-      link: '/oprlist/oprlist12.pdf',
-    },
   ];
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.title}>ПНЕВМАТИЧЕСКИЕ ПРИВОДЫ</h2>
-      <div
-        className={styles.innerWrapper2}
-        // style={{ backgroundImage: `url("/images/water.webp")` }}
-      >
+      <div className={styles.innerWrapper2}>
         <div className={styles.left50}>
           {/* <div className={styles.textWrapper}> */}
           <P size="m" className={styles.text}>
@@ -74,7 +57,7 @@ function Water(): JSX.Element {
             alt="пневмоприводы"
             layout="fill"
             className={styles.image}
-            // style={{ objectFit: 'cover' }}
+            // style={{ objectFit: 'contain' }}
           />
         </div>
       </div>
@@ -84,10 +67,10 @@ function Water(): JSX.Element {
       <div className={styles.inner}>
         <div className={styles.left50}>
           <div className={styles.textInnerWrapper}>
-            <span>
+            {/* <span>
               <HiChevronDoubleDown />
               <HiChevronDoubleDown className={styles.chevron} />
-            </span>
+            </span> */}
             <p className={styles.text}>
               Пневматические приводы серии СТМ ПП с реечной передачей
               разработаны и производятся с учетом накопленного компанией
@@ -104,8 +87,9 @@ function Water(): JSX.Element {
             <Image
               src={'/images/pneumoprivod.webp'}
               alt="пневмопривод"
-              width={458}
-              height={305}
+              fill
+              // width={458}
+              // height={305}
             />
           </div>
         </div>
@@ -225,9 +209,13 @@ function Water(): JSX.Element {
             ремонта.
           </div>
         </div>
-        <div className={styles.right50}>
+        <div className={styles.right50height}>
           <div
-            style={{ paddingBottom: '2rem', borderBottom: '1px solid gray' }}
+            style={{
+              minHeight: '50%',
+              paddingBottom: '2rem',
+              borderBottom: '1px solid gray',
+            }}
           >
             <h4 className={styles.listTitle}>
               <span className={styles.icon}>
@@ -236,14 +224,17 @@ function Water(): JSX.Element {
               </span>
               ПРИВОД С ПРУЖИННЫМ ВОЗВРАТОМ
             </h4>
-            <Image
-              src={'/images/pneumoprivod.webp'}
-              alt="пневмопривод"
-              width={458}
-              height={305}
-            />
+            <div className={styles.image2}>
+              <Image
+                src={'/images/pneumo1.webp'}
+                alt="пневмопривод"
+                fill
+                // width={458}
+                // height={255}
+              />
+            </div>
           </div>
-          <div>
+          <div style={{ height: '50%' }}>
             <h4 className={styles.listTitle}>
               <span className={styles.icon}>
                 <HiChevronDoubleDown />
@@ -251,16 +242,149 @@ function Water(): JSX.Element {
               </span>
               ПРИВОД ДВОЙНОГО ДЕЙСТВИЯ
             </h4>
-            <Image
-              src={'/images/pneumoprivod.webp'}
-              alt="пневмопривод"
-              width={458}
-              height={305}
-            />
+            <div className={styles.image2}>
+              <Image
+                src={'/images/pneumo2.webp'}
+                alt="пневмопривод"
+                fill
+                // width={458}
+                // height={305}
+              />
+            </div>
           </div>
         </div>
       </div>
-
+      <div className={styles.titleWrapper}>
+        <h2>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ АВТОМАТИЗАЦИИ АРМАТУРЫ</h2>
+      </div>
+      <div className={styles.inner} style={{ padding: '2rem 10%' }}>
+        <p className={styles.text}>
+          Обладая многолетним опытом автоматизации арматуры, собственными
+          службами расчета и сервиса, компания «СТАНДАРМ» разрабатывает и
+          поставляет надежные и безопасные решения в соответствии с требованиями
+          заказчика. Широкий опыт участия в самых сложных проектах позволяет
+          проектировать и реализовывать различные системы управления приводами.
+        </p>
+      </div>
+      <div className={styles.imageCenter}>
+        <div className={styles.image4}>
+          <Image
+            src={'/images/pneumo3.webp'}
+            alt="приборы управления пневматическими приводами"
+            fill
+            // width={770}
+            // height={320}
+          />
+        </div>
+      </div>
+      <div className={styles.inner} style={{ padding: '2rem 10%' }}>
+        <p className={styles.text}>
+          Наша компания осуществляет расчет, подбор, монтаж и настройку приборов
+          управления пневматическими приводами, а также монтаж готовых систем
+          управления, включающих пневматический привод на арматуру. Для
+          управления используются только качественные компоненты от лучших
+          производителей: YTC, TISSIN, SMC, ABB, SIEMENS, BIFOLD, ASCO, NORGREN
+          и др.
+        </p>
+      </div>
+      <div className={styles.titleWrapper}>
+        <h2>СТАНДАРТНЫЕ СИСТЕМЫ УПРАВЛЕНИЯ ПРИВОДАМИ</h2>
+      </div>
+      <div style={{ padding: '0 10%' }}>
+        <div className={styles.innerWrapper3}>
+          <div className={styles.left50}>
+            <div className={styles.title2}>РЕГУЛЯТОРЫ ДАВЛЕНИЯ</div>
+            <p>
+              Снижают и поддерживают давление воздуха (либо другой среды по
+              требованию), поступающего из распределительной сети, на постоянном
+              уровне. Материал корпуса: пластик, алюминий, нержавеющая сталь
+              Климатическое исполнение: стандартное, низкотемпературное
+            </p>
+          </div>
+          <div className={styles.right50center}>
+            <div className={styles.image3} >
+              <Image
+                src={'/images/regulator.webp'}
+                alt="РЕГУЛЯТОР ДАВЛЕНИЯ"
+                fill
+                
+                // style={{width: '50%'}}
+                // width={360}
+                // height={160}
+              />
+            </div>
+          </div>
+        </div>
+        <div className={styles.innerWrapper3}>
+          <div className={styles.left50}>
+            <div className={styles.title2}>ПОЗИЦИОНЕРЫ</div>
+            <p>
+              Обеспечивают заданное положение арматуры в зависимости от величины
+              управляющего сигнала. Материал корпуса: пластик, алюминий,
+              нержавеющая сталь Климатическое исполнение: стандартное,
+              низкотемпературное
+            </p>
+          </div>
+          <div className={styles.right50center}>
+            <div className={styles.image2}>
+              <Image
+                src={'/images/positioner.webp'}
+                alt="ПОЗИЦИОНЕР"
+                fill
+                // width={480}
+                // height={300}
+              />
+            </div>
+          </div>
+        </div>
+        <div className={styles.innerWrapper3}>
+          <div className={styles.left50}>
+            <div className={styles.title2}>
+              ЭЛЕКТРОМАГНИТНЫЕ (СОЛЕНОИДНЫЕ) КЛАПАНЫ
+            </div>
+            <p>
+              Преобразовывают электрические дискретные сигналы в дискретные
+              пневматические. Исполнение: 3/2-, 5/2, 5/3 или 6/2-х ходовые.
+              Климатическое исполнение: стандартное, низкотемпературное
+            </p>
+          </div>
+          <div className={styles.right50center}>
+            <div className={styles.image2}>
+              <Image
+                src={'/images/solenoid.webp'}
+                alt="СОЛЕНОИДНЫЙ КЛАПАН"
+                fill
+                // width={520}
+                // height={320}
+              />
+            </div>
+          </div>
+        </div>
+        <div className={styles.innerWrapper3}>
+          <div className={styles.left50}>
+            <div className={styles.title2}>
+              СИГНАЛИЗАТОРЫ КОНЕЧНЫХ ПОЛОЖЕНИЙ
+            </div>
+            <p>
+              Предназначены для выработки дискретного сигнала при изменении
+              параметров выше или ниже заданного значения. Исполнение:
+              индуктивные и механические Климатическое исполнение: стандартное,
+              низкотемпературное
+            </p>
+          </div>
+          <div className={styles.right50center}>
+            <div className={styles.image2}>
+              <Image
+                src={'/images/signalizator.webp'}
+                alt="СИГНАЛИЗАТОР КОНЕЧНЫХ ПОЛОЖЕНИЙ"
+                fill
+                // width={380}
+                // height={360}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.titleWrapper}>
         <h2>ОПРОСНЫЕ ЛИСТЫ</h2>
       </div>
@@ -270,6 +394,7 @@ function Water(): JSX.Element {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          padding: '2rem 10%',
         }}
       >
         <p className={styles.text}>
@@ -287,7 +412,7 @@ function Water(): JSX.Element {
           Вами дополнительно.
         </h4>
       </div>
-      <div className={styles.innerWrapper}>
+      <div className={styles.innerWrapper} style={{ padding: '0 10%' }}>
         <div className={styles.left50}>
           <ul>
             {files.map((file: any) => {
@@ -320,14 +445,17 @@ function Water(): JSX.Element {
             </li>
           </ul>
         </div>
-        <div className={styles.right50}>
-          <Image
-            src={'/images/ob_21.png'}
-            alt="иконка"
-            width={550}
-            height={360}
-            style={{ alignSelf: 'flex-end' }}
-          />
+        <div className={styles.right50center}>
+          <div className={styles.image2}>
+            <Image
+              src={'/images/ob_21.png'}
+              alt="опросный лист"
+              // fill
+              width={550}
+              height={360}
+              // style={{ alignSelf: 'flex-end' }}
+            />
+          </div>
         </div>
       </div>
 
@@ -342,6 +470,18 @@ function Water(): JSX.Element {
             Задвижки клиновые
           </MenuItem>
         </Link>
+        {router.pathname !== '/pneumo' && (
+          <Link href={'/pneumo'}>
+            <MenuItem
+              className={styles.menuItem}
+              appearance="primary"
+              icon="shiber"
+              size="big"
+            >
+              Пневматика
+            </MenuItem>
+          </Link>
+        )}
         <Link href={'/shiber'}>
           <MenuItem
             className={styles.menuItem}
@@ -389,4 +529,4 @@ function Water(): JSX.Element {
   );
 }
 
-export default withLayout(Water);
+export default withLayout(Pneumo);
