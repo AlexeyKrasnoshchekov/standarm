@@ -146,7 +146,7 @@ function Home({ posts, className, ...props }: any): JSX.Element {
             <MenuItem
               className={styles.lowerMenuIcon}
               appearance="primary"
-              icon="shiber"
+              icon="pneumo"
             >
               Пневматика
             </MenuItem>

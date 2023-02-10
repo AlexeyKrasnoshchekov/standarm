@@ -696,7 +696,7 @@ function Water(): JSX.Element {
           <MenuItem
             className={styles.menuItem}
             appearance="primary"
-            icon="shiber"
+            icon="pneumo"
             size="big"
           >
             Пневматика

@@ -40,6 +40,16 @@ function Vstand(): JSX.Element {
             Задвижки клиновые
           </MenuItem>
         </Link>
+        <Link href={'/pneumo'}>
+          <MenuItem
+            className={styles.menuItem}
+            appearance="primary"
+            icon="pneumo"
+            size="big"
+          >
+            Пневматика
+          </MenuItem>
+        </Link>
         <Link href={'/shiber'}>
           <MenuItem
             className={styles.menuItem}

@@ -4,6 +4,7 @@ import styles from './MenuItem.module.css';
 import cn from 'classnames';
 
 import Image from 'next/image';
+import { MdAir } from 'react-icons/Md';
 
 const MenuItem = ({
   children,
@@ -59,6 +60,17 @@ const MenuItem = ({
               width={25}
               height={25}
             />
+          </span>
+        )}
+        {icon !== 'none' && icon === 'pneumo' && (
+          <span className={styles.icon} style={{marginBottom:'5px'}}>
+            <MdAir size={25}/>
+            {/* <Image
+              src={'/images/icons/shiberIcon.png'}
+              alt="иконка"
+              width={25}
+              height={25}
+            /> */}
           </span>
         )}
         {icon !== 'none' && icon === 'disk' && (

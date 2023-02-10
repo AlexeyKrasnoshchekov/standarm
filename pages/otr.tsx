@@ -104,6 +104,16 @@ function Otr(): JSX.Element {
             Задвижки клиновые
           </MenuItem>
         </Link>
+        <Link href={'/pneumo'} className={styles.menuElem}>
+          <MenuItem
+            className={styles.lowerMenuIcon}
+            appearance="primary"
+            icon="pneumo"
+            size="big"
+          >
+            Пневматика
+          </MenuItem>
+        </Link>
         <Link href={'/shiber'} className={styles.menuElem}>
           <MenuItem
             className={styles.lowerMenuIcon}
