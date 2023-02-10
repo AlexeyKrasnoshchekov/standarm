@@ -4,7 +4,7 @@ import styles from './MenuItem.module.css';
 import cn from 'classnames';
 
 import Image from 'next/image';
-import { MdAir } from 'react-icons/Md';
+import { MdAir } from 'react-icons/md';
 
 const MenuItem = ({
   children,
