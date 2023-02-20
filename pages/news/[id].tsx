@@ -5,7 +5,6 @@ import parse from 'html-react-parser';
 import Link from 'next/link';
 
 function Post(post: any) {
-  // const parser = new DOMParser();
   const htmlContent = post.post.content && parse(post.post.content);
 
   return (

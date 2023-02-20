@@ -89,11 +89,6 @@
     margin-bottom: 2rem;
     padding: 0 10%;
 }
-.textWrapper {
-    background-color: var(--main);
-    color: var(--white);
-    padding: 0 2rem;
-}
 .text {
     text-align: justify;
     text-indent: 1.5rem;

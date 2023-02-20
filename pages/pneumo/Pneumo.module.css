@@ -3,6 +3,139 @@
     flex-direction: column;
     align-items: center;
 }
+.title {
+    margin: 3rem 0;
+}
+.innerWrapper2 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.left50 {
+    width: 50%;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text {
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-size: var(--l) !important;
+    padding: 0;
+    margin: 0;
+}
+.link {
+    color: var(--main);
+    text-decoration: underline;
+}
+.link:hover {
+    color: var(--gray);
+    text-decoration: none;
+}
+.right50, .right50height {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 1.5rem;
+    min-height: calc(100vh - 200px);
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    object-fit: cover;
+    width: 100% !important;
+    min-height: 100% !important;
+    position: relative !important;
+  }
+.image2, .image4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    object-fit: contain;
+    width: 100% !important;
+    min-height: 65% !important;
+    position: relative !important;
+  }
+.image3 {
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    width: 35% !important;
+    min-height: 80% !important;
+    position: relative !important;
+}
+.inner {
+    width: 100%;
+    display: flex;
+    padding: 2rem 0;
+    font-size: var(--l);
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.inner .icon {
+    margin-right: 1rem;
+}
+.textInnerWrapper {
+    display: flex;
+}
+.textInnerWrapper span {
+    padding-right: 1rem;
+}
+.listTitle {
+    text-align: center;
+    font-size: var(--xl);
+}
+.flex {
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.left33 {
+    width: 33%;
+    padding-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left33:last-child {
+    padding-right: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: var(--l);
+}
+.list li {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+.list span{
+    color: var(--main);
+    margin-right: 0.5rem;
+}
+
+.textWrapper2 {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+.textWrapper2 span {
+    color: var(--main);
+}
+
+.chevron {
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+}
+
 .innerWrapper {
     display: flex;
     width: 100%;
@@ -12,12 +145,7 @@
     border-top-width: 1px;
     border-bottom-width: 1px;
 }
-.innerWrapper2 {
-    display: flex;
-    width: 100%;
-    margin-bottom: 2rem;
-    /* padding: 0 10%; */
-}
+
 .innerWrapper3 {
     display: flex;
     width: 100%;
@@ -39,9 +167,7 @@
     min-height: 70vh;
     justify-content: center;
 }
-.title {
-    margin: 3rem 0;
-}
+
 .title2 {
     margin: 3rem 0;
     background-color: var(--main);
@@ -51,141 +177,9 @@
     padding: 0.5rem;
 }
 
-.image {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    object-fit: cover;
-    width: 100% !important;
-    min-height: 100% !important;
-    position: relative !important;
-    /* height: unset !important; */
-  }
-.image2, .image4 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    object-fit: contain;
-    width: 100% !important;
-    min-height: 65% !important;
-    position: relative !important;
-    /* height: unset !important; */
-  }
-.image3 {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    /* align-self: center; */
-    object-fit: contain;
-    width: 35% !important;
-    min-height: 80% !important;
-    position: relative !important;
-  }
-
-.list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    /* padding: 0 1.5rem; */
-    font-size: var(--l);
-}
-.list li {
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-.list span{
-    color: var(--main);
-    margin-right: 0.5rem;
-}
-.textWrapper2 {
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-.textWrapper2 span {
-    color: var(--main);
-}
-.listTitle {
-    text-align: center;
-    font-size: var(--xl);
-}
-.left33 {
-    width: 33%;
-    padding-right: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.left33:last-child {
-
-    padding-right: 0;
-
-}
-.flex {
-    display: flex;
-    width: 100%;
-}
-.textWrapper {
-    width: 100%;
-    background-color: var(--gray);
-    color: var(--white) !important;
-    font-size: var(--m);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: var(--black);
-
-    height: 75vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.textWrapper .text {
-    width: 50%;
-    font-size: var(--l);
-}
-.textWrapper p {
-    font-size: var(--l);
-}
-.link {
-    color: var(--main);
-    text-decoration: underline;
-}
-.link:hover {
-    color: var(--gray);
-    text-decoration: none;
-}
-
 .left50 ul {
     padding: 0;
     margin: 0;
-}
-
-
-.left50 {
-    width: 50%;
-    padding-right: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-}
-.textInnerWrapper {
-    display: flex;
-}
-.textInnerWrapper span {
-    padding-right: 1rem;
-}
-.right50, .right50height {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-left: 1.5rem;
-    min-height: calc(100vh - 200px);
 }
 
 .right50center {
@@ -197,32 +191,17 @@
     min-height: calc(100vh - 200px);
 }
 
-.right50two {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-left: 1.5rem;
-    min-height: 80vh;
-}
-
 .menuWrapper {
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 10vh;
     margin-top: 10vh;
-    /* padding: 0 10%; */
 }
 .menuItem {
     box-shadow: 5px 5px 5px gray;
-  }
-
-.text {
-    text-align: justify;
-    text-indent: 1.5rem;
-    font-size: var(--l) !important;
 }
+
 .titleWrapper {
     display: block;
     width: 100vw;
@@ -239,31 +218,7 @@
     margin: 0;
     position: relative;
 }
-.chevron {
-    position: absolute;
-    top: 0.8rem;
-    left: 0;
-}
-.text {
-    padding: 0;
-    margin: 0;
-}
-.inner {
-    width: 100%;
-    display: flex;
-    padding: 2rem 0;
-    font-size: var(--l);
-    align-items: stretch;
-    min-height: 100%;
-}
 
-.inner .icon {
-    margin-right: 1rem;
-}
-.flex {
-    display: flex;
-    padding-bottom: 2rem;
-}
 .gradient {
     display: block;
     min-height: 20vh;

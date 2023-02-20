@@ -16,12 +16,6 @@ const MenuItem = ({
 }: MenuItemProps) => {
   return (
     <div
-      // style={{
-      //   width: '100px',
-      //   height: '100px',
-      //   borderRadius: '50%',
-      //   background: 'black',
-      // }}
       className={cn(styles.menuItem, className, {
         [styles.primary]: appearance === 'primary',
         [styles.ghost]: appearance === 'ghost',
@@ -65,12 +59,6 @@ const MenuItem = ({
         {icon !== 'none' && icon === 'pneumo' && (
           <span className={styles.icon} style={{marginBottom:'5px'}}>
             <MdAir size={25}/>
-            {/* <Image
-              src={'/images/icons/shiberIcon.png'}
-              alt="иконка"
-              width={25}
-              height={25}
-            /> */}
           </span>
         )}
         {icon !== 'none' && icon === 'disk' && (

@@ -1,12 +1,27 @@
 import styles from './Arma.module.css';
 import { withLayout } from '@/layout/Layout';
 import Image from 'next/image';
-import Link from 'next/link';
 import { BsCheck2 } from 'react-icons/bs';
+import Head from 'next/head';
 
 function Arma(): JSX.Element {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="keywords"
+          content="ЭЛЕКТРИЧЕСКИЕ ПРИВОДЫ AUMA, ПНЕВМАТИЧЕСКИЕ ПРИВОДЫ, ГИДРАВЛИЧЕСКИЕ ПРИВОДЫ, СПЕЦИАЛЬНЫЕ ПРИВОДЫ"
+        />
+        <title>
+          ЭЛЕКТРИЧЕСКИЕ ПРИВОДЫ AUMA, ПНЕВМАТИЧЕСКИЕ ПРИВОДЫ, ГИДРАВЛИЧЕСКИЕ ПРИВОДЫ, СПЕЦИАЛЬНЫЕ ПРИВОДЫ
+        </title>
+        <meta
+          name="description"
+          content="ЭЛЕКТРИЧЕСКИЕ ПРИВОДЫ AUMA, ПНЕВМАТИЧЕСКИЕ ПРИВОДЫ, ГИДРАВЛИЧЕСКИЕ ПРИВОДЫ, СПЕЦИАЛЬНЫЕ ПРИВОДЫ"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.wrapper}>
         <h2 className={styles.title}>ЭЛЕКТРИЧЕСКИЕ ПРИВОДЫ AUMA</h2>
         <div className={styles.innerWrapper}>
@@ -74,7 +89,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_1.png'}
-                alt="лого стандарма"
+                alt="НЕПОЛНООБОРОТНЫЙ ПРИВОД"
                 width={200}
                 height={320}
               />
@@ -109,7 +124,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_2.png'}
-                alt="лого стандарма"
+                alt="ЧЕРВЯЧНЫЙ РЕДУКТОР"
                 width={200}
                 height={275}
               />
@@ -144,7 +159,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_3.png'}
-                alt="лого стандарма"
+                alt="ЧЕРВЯЧНЫЙ РЕДУКТОР"
                 width={200}
                 height={235}
               />
@@ -181,7 +196,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_4.png'}
-                alt="лого стандарма"
+                alt="КОНИЧЕСКИЙ РЕДУКТОР"
                 width={200}
                 height={320}
               />
@@ -211,7 +226,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_5.png'}
-                alt="лого стандарма"
+                alt="ЦИЛИНДРИЧЕСКИЙ РЕДУКТОР"
                 width={200}
                 height={390}
               />
@@ -246,7 +261,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_6.png'}
-                alt="лого стандарма"
+                alt="КОНИЧЕСКИЙ РЕДУКТОР"
                 width={200}
                 height={330}
               />
@@ -297,7 +312,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_7.png'}
-                alt="лого стандарма"
+                alt="МНОГООБОРОТНЫЙ ПРИВОД"
                 width={200}
                 height={290}
               />
@@ -365,7 +380,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_8.png'}
-                alt="лого стандарма"
+                alt="ГИДРАВЛИЧЕСКИЕ ПРИВОДЫ"
                 width={200}
                 height={260}
               />
@@ -415,7 +430,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_9.png'}
-                alt="лого стандарма"
+                alt="ПНЕВМАТИЧЕСКИЕ ПРИВОДЫ"
                 width={200}
                 height={260}
               />
@@ -463,7 +478,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_10.png'}
-                alt="лого стандарма"
+                alt="ПРИВОДЫ ПОД ГАЗ ВЫСОКОГО ДАВЛЕНИЯ"
                 width={200}
                 height={180}
               />
@@ -519,7 +534,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_11.png'}
-                alt="лого стандарма"
+                alt="КОМПАКТНЫЕ ПРИВОДЫ С КУЛИСНЫМ МЕХАНИЗМОМ"
                 width={200}
                 height={340}
               />
@@ -573,7 +588,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_12.png'}
-                alt="лого стандарма"
+                alt="ПНЕВМАТИЧЕСКИЕ ПРИВОДЫ С РЕЕЧНОЙ ПЕРЕДАЧЕЙ"
                 width={200}
                 height={390}
               />
@@ -623,7 +638,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_13.png'}
-                alt="лого стандарма"
+                alt="КОМПАКТНЫЕ ПРИВОДЫ С ЗУБЧАТОЙ ВИНТОВОЙ ПЕРЕДАЧЕЙ"
                 width={200}
                 height={250}
               />
@@ -664,7 +679,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_14.png'}
-                alt="лого стандарма"
+                alt="ПРИВОДЫ С КРИВОШИПНОЙ ПЕРЕДАЧЕЙ"
                 width={200}
                 height={190}
               />
@@ -720,7 +735,7 @@ function Arma(): JSX.Element {
             <div className={styles.image}>
               <Image
                 src={'/images/arma/priv_15.png'}
-                alt="лого стандарма"
+                alt="ПНЕВМОГИДРАВЛИЧЕСКИЕ ПРИВОДЫ С КРИВОШИПНОЙ ПЕРЕДАЧЕЙ"
                 width={200}
                 height={250}
               />

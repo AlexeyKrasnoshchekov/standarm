@@ -20,7 +20,7 @@ function Kran4(): JSX.Element {
         <div className={styles.right50}>
           <Image
             src={'/images/prod_4_4.png'}
-            alt="завтвор дисковый"
+            alt="кран шаровый"
             width={250}
             height={221}
           />
