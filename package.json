@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install",
-    "stylelint": "stylelint \"**/*.css\" --fix"
+    "lint": "next lint"
   },
   "dependencies": {
     "@next/font": "13.1.2",
@@ -31,8 +29,5 @@
     "react-yandex-metrika": "^2.6.0",
     "sharp": "^0.31.3",
     "typescript": "4.9.4"
-  },
-  "devDependencies": {
-    "husky": "^8.0.3"
   }
 }
