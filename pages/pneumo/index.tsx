@@ -31,9 +31,10 @@ function Pneumo(): JSX.Element {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.wrapper}>
-        <h2 className={styles.title}>ПНЕВМАТИЧЕСКИЕ ПРИВОДЫ</h2>
-        <div className={styles.innerWrapper2}>
+      <div className={styles.wrapper} style={{minHeight: '90vh'}}>
+        <h2 className={styles.title}>Страница еще в разработке</h2>
+        <h4 className={styles.title}>Но мы скоро ее опубликуем</h4>
+        {/* <div className={styles.innerWrapper2}>
           <div className={styles.left50}>
             <P size="m" className={styles.text}>
               Одним из ключевых направлений деятельности нашей компании является
@@ -518,7 +519,7 @@ function Pneumo(): JSX.Element {
               Автоматизация арматуры
             </MenuItem>
           </Link>
-        </div>
+        </div> */}
         <div className={styles.gradient}></div>
       </div>
     </>
