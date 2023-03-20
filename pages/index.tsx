@@ -17,10 +17,10 @@ import {
 import Link from 'next/link';
 
 const imagesCarousel = [
-  '/images/prom_1.webp',
-  '/images/prom_2.webp',
-  '/images/prom_3.webp',
-  '/images/prom_4.webp',
+  '/images/prom_1.jpg',
+  '/images/prom_2.jpg',
+  '/images/prom_3.jpg',
+  '/images/prom_4.jpg',
 ];
 
 function Home({ posts, className, ...props }: any): JSX.Element {

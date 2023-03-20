@@ -88,7 +88,7 @@ function Water(): JSX.Element {
           <div className={styles.right50}>
             <div className={styles.imageWrapper}>
               <Image
-                src={'/images/water.webp'}
+                src={'/images/water.jpg'}
                 alt="водоподготовка"
                 layout="fill"
                 className={styles.image}
