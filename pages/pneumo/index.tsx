@@ -36,6 +36,7 @@ function Pneumo(): JSX.Element {
         <h4 className={styles.title}>Но мы скоро ее опубликуем</h4> */}
         <div className={styles.innerWrapper2}>
           <div className={styles.left50}>
+            <h4 className={styles.listTitle}>ПНЕВМАТИКА</h4>
             <P size="m" className={styles.text}>
               Одним из направлений деятельности нашей компании является
               автоматизация трубопроводной арматуры. Нами накоплен многолетний
@@ -51,9 +52,12 @@ function Pneumo(): JSX.Element {
               на нашем складе.
             </P>
             <P size="m" className={styles.text} style={{ marginTop: '1rem' }}>
-              Для получения технико-коммерческого предложения Вы можете
-              {' '}<Link href={'/contact'} className={styles.link}>связаться</Link> с нами и мы направим форму с
-              данными необходимыми для подбора приводов.
+              Для получения технико-коммерческого предложения Вы можете{' '}
+              <Link href={'/contact'} className={styles.link}>
+                связаться
+              </Link>{' '}
+              с нами и мы направим форму с данными необходимыми для подбора
+              приводов.
             </P>
           </div>
           <div className={styles.right50}>
@@ -373,7 +377,7 @@ function Pneumo(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className={styles.titleWrapper}>
+        {/* <div className={styles.titleWrapper}>
           <h2>ОПРОСНЫЕ ЛИСТЫ</h2>
         </div>
         <div
@@ -399,8 +403,8 @@ function Pneumo(): JSX.Element {
             Если предоставленной информации окажется недостаточно, мы свяжемся с
             Вами дополнительно.
           </h4>
-        </div>
-        <div className={styles.innerWrapper} style={{ padding: '0 10%' }}>
+        </div> */}
+        {/* <div className={styles.innerWrapper} style={{ padding: '0 10%' }}>
           <div className={styles.left50}>
             <ul>
               {files.map((file: any) => {
@@ -445,7 +449,7 @@ function Pneumo(): JSX.Element {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.menuWrapper}>
           <Link href={'/klin'}>
@@ -456,6 +460,16 @@ function Pneumo(): JSX.Element {
               size="big"
             >
               Задвижки клиновые
+            </MenuItem>
+          </Link>
+          <Link href={'/water'}>
+            <MenuItem
+              className={styles.menuItem}
+              appearance="primary"
+              icon="water"
+              size="big"
+            >
+              Технологии воды
             </MenuItem>
           </Link>
           {router.pathname !== '/pneumo' && (
