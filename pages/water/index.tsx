@@ -8,6 +8,11 @@ import P from '@/components/P/P';
 import MenuItem from '@/components/MenuItem/MenuItem';
 import Head from 'next/head';
 
+interface File {
+  name: String,
+  link: String
+}
+
 function Water(): JSX.Element {
   const files = [
     {
@@ -663,9 +668,9 @@ function Water(): JSX.Element {
         <div className={styles.innerWrapper}>
           <div className={styles.left50}>
             <ul>
-              {files.map((file: any) => {
+              {files.map((file: File) => {
                 return (
-                  <li className={styles.inner} key={file.name}>
+                  <li className={styles.inner} key={`${file.name}`}>
                     <Image
                       src={'/images/icons/ico_opr.png'}
                       alt="иконка"
@@ -677,7 +682,7 @@ function Water(): JSX.Element {
                       legacyBehavior
                       download
                       className={styles.link}
-                      href={file.link}
+                      href={`${file.link}`}
                     >
                       <a className={styles.link} target="_blank">
                         {file.name}

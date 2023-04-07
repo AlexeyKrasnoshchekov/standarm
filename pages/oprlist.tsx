@@ -3,6 +3,11 @@ import { withLayout } from '@/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
 
+interface File {
+  name: String,
+  link: String
+}
+
 function Oprlist(): JSX.Element {
   const files = [
     { name: 'Опросный лист Задвижки Тип СТМ З', link: '/oprlist/oprlist1.pdf' },
@@ -55,9 +60,9 @@ function Oprlist(): JSX.Element {
     <div className={styles.wrapper}>
       <h2 className={styles.title}>ОПРОСНЫЕ ЛИСТЫ</h2>
       <ul className={styles.cardWrapper}>
-        {files.map((file: any) => {
+        {files.map((file: File, index) => {
           return (
-            <li className={styles.inner} key={file.name}>
+            <li className={styles.inner} key={index}>
               <Image
                 src={'/images/icons/ico_opr.png'}
                 alt="иконка"
@@ -68,7 +73,7 @@ function Oprlist(): JSX.Element {
                 legacyBehavior
                 download
                 className={styles.link}
-                href={file.link}
+                href={`${file.link}`}
               >
                 <a className={styles.link} target="_blank">
                   {file.name}
