@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 
 
-function Post({post}: Post) {
+function Post({post}: any) {
   const htmlContent = post.content && parse(post.content);
 
   return (
