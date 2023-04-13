@@ -3,7 +3,7 @@ import { withLayout } from '../../layout/Layout';
 import Image from 'next/image';
 import Head from 'next/head';
 
-function News({ posts }: Post[]): JSX.Element {
+function News({ posts }: any): JSX.Element {
 
   return (
     <>
