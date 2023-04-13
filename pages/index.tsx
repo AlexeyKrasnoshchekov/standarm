@@ -199,7 +199,6 @@ export default withLayout(Home);
 import fsPromises from 'fs/promises';
 import path from 'path';
 import { Post, Posts } from '@/interfaces/post.interface';
-import { HomeProps } from './Home.props';
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'news.json');
   const jsonData = await fsPromises.readFile(filePath);
