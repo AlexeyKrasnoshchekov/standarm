@@ -318,7 +318,6 @@ function Pneumo(): JSX.Element {
                 // style={{
                 //   outline: '1px solid red',
                 //   marginRight: '50px',
-                //   width: '400px',
                 //   display: 'flex',
                 //   justifyContent: 'center',
                 // }}
