@@ -41,6 +41,10 @@
     padding-left: 1.5rem;
     min-height: calc(100vh - 200px);
 }
+/* .right50heightInner {
+    display: flex;
+    justify-content: center;
+} */
 .image {
     display: flex;
     align-items: center;
@@ -51,12 +55,12 @@
     position: relative !important;
   }
 .image2, .image4 {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: flex-end;
-    object-fit: contain;
+    object-fit: contain; */
     width: 100% !important;
-    min-height: 65% !important;
+    min-height: 100% !important;
     position: relative !important;
   }
 .image3 {
@@ -73,7 +77,6 @@
     padding: 2rem 0;
     font-size: var(--l);
     align-items: stretch;
-    min-height: 100%;
 }
 
 .inner .icon {

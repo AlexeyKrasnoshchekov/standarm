@@ -23,7 +23,7 @@ const imagesCarousel = [
   '/images/prom_4.jpg',
 ];
 
-function Home({ posts, className, ...props }: HomeProps): JSX.Element {
+function Home({ posts, className, ...props }: any): JSX.Element {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

@@ -214,13 +214,7 @@ function Pneumo(): JSX.Element {
             </div>
           </div>
           <div className={styles.right50height}>
-            <div
-              style={{
-                minHeight: '50%',
-                paddingBottom: '2rem',
-                borderBottom: '1px solid gray',
-              }}
-            >
+            <div className={styles.right50heightInner} style={{height: '50%'}}>
               <h4 className={styles.listTitle}>
                 <span className={styles.icon}>
                   <HiChevronDoubleDown />
@@ -229,10 +223,15 @@ function Pneumo(): JSX.Element {
                 ПРИВОД С ПРУЖИННЫМ ВОЗВРАТОМ
               </h4>
               <div className={styles.image2}>
-                <Image src={'/images/pneumo1.webp'} alt="пневмопривод" fill />
+                <Image
+                  src={'/images/pneumo1.webp'}
+                  alt="пневмопривод"
+                  height={200}
+                  width={400}
+                />
               </div>
             </div>
-            <div style={{ height: '50%' }}>
+            <div className={styles.right50heightInner} style={{height: '50%'}}>
               <h4 className={styles.listTitle}>
                 <span className={styles.icon}>
                   <HiChevronDoubleDown />
@@ -241,15 +240,100 @@ function Pneumo(): JSX.Element {
                 ПРИВОД ДВОЙНОГО ДЕЙСТВИЯ
               </h4>
               <div className={styles.image2}>
-                <Image src={'/images/pneumo2.webp'} alt="пневмопривод" fill />
+                <Image
+                  src={'/images/pneumo2.webp'}
+                  alt="пневмопривод"
+                  height={200}
+                  width={400}
+                />
               </div>
             </div>
           </div>
         </div>
+
         <div className={styles.titleWrapper}>
           <h2>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ АВТОМАТИЗАЦИИ АРМАТУРЫ</h2>
         </div>
-        <div className={styles.inner} style={{ padding: '2rem 10%' }}>
+        <div className={styles.inner}>
+          <div className={styles.left50}>
+            <p
+              className={styles.text}
+              style={{ height: '50%', display: 'flex', alignItems: 'center' }}
+            >
+              Обладая многолетним опытом автоматизации арматуры, собственными
+              службами расчета и сервиса, компания «СТАНДАРМ» разрабатывает и
+              поставляет надежные и безопасные решения в соответствии с
+              требованиями заказчика. Широкий опыт участия в самых сложных
+              проектах позволяет проектировать и реализовывать различные системы
+              управления приводами.
+            </p>
+            <p
+              className={styles.text}
+              style={{ height: '50%', display: 'flex', alignItems: 'center' }}
+            >
+              Наша компания осуществляет расчет, подбор, монтаж и настройку
+              приборов управления пневматическими приводами, а также монтаж
+              готовых систем управления, включающих пневматический привод на
+              арматуру. Для управления используются только качественные
+              компоненты от лучших производителей.
+            </p>
+          </div>
+          <div className={styles.right50height}>
+            <div className={styles.right50heightInner} style={{height: '50%'}}>
+              {/* <h4 className={styles.listTitle}>
+                <span className={styles.icon}>
+                  <HiChevronDoubleDown />
+                  <HiChevronDoubleDown className={styles.chevron} />
+                </span>
+                ПРИВОД С ПРУЖИННЫМ ВОЗВРАТОМ
+              </h4> */}
+              <div className={styles.image2}>
+                <Image
+                  src={'/images/pneumo31.png'}
+                  alt="пневмопривод"
+                  height={300}
+                  width={300}
+                />
+              </div>
+            </div>
+            <div
+              className={styles.right50heightInner}
+              style={{
+                width: '300px',
+                height: '50%',
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '2rem'
+              }}
+            >
+              {/* <h4 className={styles.listTitle}>
+                <span className={styles.icon}>
+                  <HiChevronDoubleDown />
+                  <HiChevronDoubleDown className={styles.chevron} />
+                </span>
+                ПРИВОД ДВОЙНОГО ДЕЙСТВИЯ
+              </h4> */}
+              <div
+                className={styles.image2}
+                // style={{
+                //   outline: '1px solid red',
+                //   marginRight: '50px',
+                //   width: '400px',
+                //   display: 'flex',
+                //   justifyContent: 'center',
+                // }}
+              >
+                <Image
+                  src={'/images/pneumo32.png'}
+                  alt="пневмопривод"
+                  height={300}
+                  width={200}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className={styles.inner} style={{ padding: '2rem 10%' }}>
           <p className={styles.text}>
             Обладая многолетним опытом автоматизации арматуры, собственными
             службами расчета и сервиса, компания «СТАНДАРМ» разрабатывает и
@@ -274,11 +358,10 @@ function Pneumo(): JSX.Element {
             приборов управления пневматическими приводами, а также монтаж
             готовых систем управления, включающих пневматический привод на
             арматуру. Для управления используются только качественные компоненты
-            от лучших производителей: YTC, TISSIN, SMC, ABB, SIEMENS, BIFOLD,
-            ASCO, NORGREN и др.
+            от лучших производителей.
           </p>
-        </div>
-        <div className={styles.titleWrapper}>
+        </div> */}
+        {/* <div className={styles.titleWrapper}>
           <h2>СТАНДАРТНЫЕ СИСТЕМЫ УПРАВЛЕНИЯ ПРИВОДАМИ</h2>
         </div>
         <div style={{ padding: '0 10%' }}>
@@ -376,7 +459,7 @@ function Pneumo(): JSX.Element {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div className={styles.titleWrapper}>
           <h2>ОПРОСНЫЕ ЛИСТЫ</h2>
         </div>
